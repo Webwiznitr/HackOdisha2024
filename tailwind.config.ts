@@ -18,6 +18,10 @@ const config: Config = {
                 inter: "var(--font-inter)",
                 "dela-gothic": "var(--font-dela-gothic-one)",
             },
+
+            screens: {
+                xsm: "300px",
+            },
         },
     },
     plugins: [],

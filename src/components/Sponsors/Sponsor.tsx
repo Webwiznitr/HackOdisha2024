@@ -33,7 +33,7 @@ export default function Sponsor({ type, sponsorsList }: SponsorProps) {
                     className="w-full"
                 />
             </div>
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 md:gap-10 lg:grid-cols-4 lg:gap-16 xl:grid-cols-5 xl:gap-24 2xl:gap-[130px]">
+            <div className="grid grid-cols-1 xsm:grid-cols-2 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 md:gap-10 lg:grid-cols-4 lg:gap-16 xl:grid-cols-5 xl:gap-24 2xl:gap-[130px]">
                 {sponsorsList.map((sponsor, index) => (
                     <SponserLogo
                         key={index}
