@@ -1,8 +1,18 @@
 import type { Metadata } from "next"
-import { Inter, Archivo_Black, Archivo } from "next/font/google"
+import { Dela_Gothic_One, Inter, Archivo_Black, Archivo } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["100", "300", "400", "700"],
+})
+const delaGothicOne = Dela_Gothic_One({
+  subsets: ["latin"],
+  variable: "--font-dela-gothic-one",
+  weight: ["400"],
+})
+
 
 const archivo_black = Archivo_Black({
   subsets: ["latin"],
@@ -19,17 +29,17 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "HackOdisha 4.0",
   description: "hackodisha",
-}
+};
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${archivo_black.variable} ${archivo.variable}`}
+        className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable}`}
       >
         {children}
       </body>

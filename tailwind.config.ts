@@ -1,4 +1,3 @@
-import { Archivo_Black } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,12 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily:{
-        archivoBlack:"var(--archivo-black)",
-        archivo:"var(--archivo)"
-      }
+
+      fontFamily: {
+        inter: "var(--font-inter)",
+        "dela-gothic": "var(--font-dela-gothic-one)",
+        archivoBlack: "var(--archivo-black)",
+        archivo: "var(--archivo)",
+      },
+
+      screens: {
+        xsm: "300px",
+      },
     },
   },
   plugins: [],
-};
+}
 export default config;
