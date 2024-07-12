@@ -1,5 +1,6 @@
 import { sponsors, cardboardTexture } from "./data";
 import Sponsor from "./Sponsor";
+import "./sponsors.styles.css";
 const Sponsors = () => {
     return (
         <section
