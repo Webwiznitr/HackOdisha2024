@@ -17,6 +17,7 @@ const numbersArray = Array.from(
 
 const Timeline = () => {
   const [day, setDay] = useState(0)
+
   return (
     <main
       className="relative flex flex-col items-center bg-[#FFF6E0] z-10 pb-12 overflow-x-hidden"
@@ -36,7 +37,7 @@ const Timeline = () => {
                 setDay(idx)
               }}
             >
-              <Day number={item} />
+              <Day number={item} active={day==idx?true:false} />
             </div>
           )
         })}
