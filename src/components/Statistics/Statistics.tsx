@@ -9,7 +9,7 @@ import updown from "./images/Brutalist 114.png"
 const Statistics = () => {
   return (
     <div className='Statistics'>
-      <Image src={cardboard} className='blend' />
+      <Image src={cardboard} className='blend' alt='' />
       <div className='flex top 2xl:ml-[42vw] xl:ml-[36vw] lg:ml-[34vw] md:ml-[30vw] sm:ml-[24vw]'>
         <div className='img mt-12'>
           <Image src={right} width={78} height={28} alt="" />
@@ -17,7 +17,7 @@ const Statistics = () => {
         <div className='heading mt-8 ml-4 mr-4'>
           <h1>STATISTICS</h1>
         </div>
-        <div className='img mt-12'>
+        <div className='images mt-12'>
           <Image src={left} width={78} height={28} alt="" />
         </div>
       </div>
