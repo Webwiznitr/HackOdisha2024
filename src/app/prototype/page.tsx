@@ -1,4 +1,4 @@
-import Sponsors from "@/components/Sponsors/Sponsors";
+import Statistics from "@/components/Statistics/Statistics";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
         <main className="flex justify-center flex-col">
             Testing Home Page
             {/* Import and add your respective component here */}
-            <Sponsors />
+            <Statistics />
         </main>
     );
 }
