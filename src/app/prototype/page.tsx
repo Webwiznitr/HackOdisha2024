@@ -1,13 +1,14 @@
 import Prizes from "@/components/Prizes/Prizes";
 import Sponsors from "@/components/Sponsors/Sponsors";
-import Image from "next/image";
+import Timeline from "./Timeline/Timeline";
 
 export default function Home() {
     return (
         <main className="flex justify-center flex-col">
             Testing Home Page
             {/* Import and add your respective component here */}
-            <Prizes/>
+            <Timeline />
+            <Prizes />
             <Sponsors />
             
         </main>
