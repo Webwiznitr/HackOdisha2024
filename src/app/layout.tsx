@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Dela_Gothic_One, Inter } from "next/font/google";
+import { Dela_Gothic_One, Inter, Archivo_Black } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,6 +11,11 @@ const delaGothicOne = Dela_Gothic_One({
     subsets: ["latin"],
     variable: "--font-dela-gothic-one",
     weight: ["400"],
+});
+const ArchivoBlack = Archivo_Black({
+    subsets: ["latin"],
+    weight: ["400"],
+    // variable: "--font-archivo-black"
 });
 
 export const metadata: Metadata = {
@@ -25,7 +30,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${delaGothicOne.variable}`}>
+            <body className={`${inter.variable} ${delaGothicOne.variable} ${ArchivoBlack.className}`}>
                 {children}
             </body>
         </html>

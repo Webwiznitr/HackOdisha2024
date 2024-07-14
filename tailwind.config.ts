@@ -17,6 +17,7 @@ const config: Config = {
             fontFamily: {
                 inter: "var(--font-inter)",
                 "dela-gothic": "var(--font-dela-gothic-one)",
+                // "archivo": "var(--font-archivo-black"
             },
 
             screens: {
