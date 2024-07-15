@@ -8,11 +8,10 @@ const inter = Inter({
   weight: ["100", "300", "400", "700"],
 })
 const delaGothicOne = Dela_Gothic_One({
-  subsets: ["latin"],
-  variable: "--font-dela-gothic-one",
-  weight: ["400"],
-})
-
+    subsets: ["latin"],
+    variable: "--font-dela-gothic-one",
+    weight: ["400"],
+});
 
 const archivo_black = Archivo_Black({
   subsets: ["latin"],

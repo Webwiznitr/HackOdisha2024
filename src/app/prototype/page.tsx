@@ -4,6 +4,7 @@ import Sponsors from "@/components/Sponsors/Sponsors";
 import Image from "next/image";
 import Timeline from "@/components/Timeline/Timeline";
 import Statistics from "@/components/Statistics/Statistics";
+import AreUReady from "@/components/AreUReady/AreUReady";
 
 export default function Home() {
     return (
@@ -11,7 +12,8 @@ export default function Home() {
         <main className="flex justify-center flex-col">
             Testing Home Page
             {/* Import and add your respective component here */}
-
+            
+            <AreUReady/>
             <AboutUs/>
             <Statistics/>
             <Timeline />
@@ -19,5 +21,4 @@ export default function Home() {
             <Sponsors />
         </main>
     );
-  
 }
