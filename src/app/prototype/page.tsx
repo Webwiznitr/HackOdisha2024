@@ -1,15 +1,24 @@
+import Prizes from "@/components/Prizes/Prizes";
+import AboutUs from "@/components/AboutUs/About";
 import Sponsors from "@/components/Sponsors/Sponsors";
-import Timeline from "./Timeline/Timeline";
+import Image from "next/image";
+import Timeline from "@/components/Timeline/Timeline";
+import Statistics from "@/components/Statistics/Statistics";
 import AreUReady from "@/components/AreUReady/AreUReady";
 
 export default function Home() {
     return (
-      <main className="flex justify-center flex-col">
-        Testing Home Page
-        {/* Import and add your respective component here */}
-        <AreUReady/>
-        <Timeline />
-        <Sponsors />
-      </main>
-    )
+
+        <main className="flex justify-center flex-col">
+            Testing Home Page
+            {/* Import and add your respective component here */}
+            
+            <AreUReady/>
+            <AboutUs/>
+            <Statistics/>
+            <Timeline />
+            <Prizes />
+            <Sponsors />
+        </main>
+    );
 }
