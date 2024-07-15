@@ -1,0 +1,14 @@
+#timeline-main-background {
+  background: url("./assets/cardboard-texture.png");
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #000;
+}
