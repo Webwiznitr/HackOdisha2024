@@ -63,7 +63,7 @@ const Team: React.FC = () => {
             src={Graphic1}
             alt="GRAPHIC1"
           />
-          <p className="team text-center lg:text-7xl md:text-5xl text-2xl font-semibold ">
+          <p className="team text-center lg:-mt-2 -mt-1 lg:text-7xl md:text-5xl text-2xl font-semibold ">
             OUR TEAM
           </p>
           <Image

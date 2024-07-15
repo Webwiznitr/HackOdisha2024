@@ -13,11 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily:{
-          "font-family": "Archivo Black",
-          "font-weight": "400",
-          "font-style": "normal",
-        },
+
       colors:{
         customPink: '#624353',
       },

@@ -1,5 +1,4 @@
-import Team from "@/components/Team/page";
-import Image from "next/image";
+import Team from "@/components/Team/Team";
 
 export default function Home() {
   return (
