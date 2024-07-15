@@ -37,7 +37,7 @@ const AboutUs = () => {
 
         <div className='relative text-justify w-full'>
           <div className='pb-4 relative -rotate-6 w-full z-10'>
-            <div className='absolute top-0  md:left-52 left-20 md:w-[280px] w-[180px]'>
+            <div className='absolute md:-top-2 top-0 sm:left-56 left-20 md:w-[290px] w-[180px]'>
               <Image
                 src='/images/aboutus-crack-wall.png'
                 alt='Crack-wall'
@@ -63,7 +63,7 @@ const AboutUs = () => {
               HackOdisha- a thrilling <span className='text-[#E16C00]'>36-hour online hackathon</span> organized by <span className='text-[#E16C00]'>Webwiz, Nit Rourkela</span>— an event dedicated to fostering community collaboration. With an impressive turnout of over 1600 participants across India, this hackathon promises to be a platform where innovation knows no bounds.
             </p>
             <p className='text-[#E7E7E7]'>
-              We celebrate the power of technology and the indomitable spirit of our participants. Together, we're shaping a brighter future through <span className='text-[#E16C00]'>innovation and collaboration.</span>
+              We celebrate the power of technology and the indomitable spirit of our participants. Together, we&apos;re shaping a brighter future through <span className='text-[#E16C00]'>innovation and collaboration.</span>
             </p>
           </div>
         </div>
