@@ -1,5 +1,4 @@
-// md:mt-[92rem]
-// lg:mt-[60rem]
+
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
