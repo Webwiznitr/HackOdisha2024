@@ -43,7 +43,7 @@ const Team: React.FC = () => {
       <div className=" bg-customPink w-full h-full pt-10 lg:pb-0 md:pb-0 pb-10">
         <div ref={star2Ref} className="image-colored">
           <Image
-            className="star2 absolute lg:size-12 rotate-45 lg:mt-24 ml-auto lg:right-24 custom-750:size-10 custom-345:size-6 custom-500:size-8 md:right-16 md:size-9 md:mt-32 size-5 right-12 mt-16"
+            className="star2 absolute lg:size-12 rotate-45 lg:mt-24 ml-auto lg:right-24 custom-345:size-6 md:right-16 md:size-9 md:mt-32 size-8 right-12 mt-16"
             src={star2}
             alt="Star2"
           />
