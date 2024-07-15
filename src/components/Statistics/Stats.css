@@ -1,7 +1,8 @@
 .Statistics {
     background-color: #FFF6E0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    background-image: url(./images/cardboard-texture\ 1.png);
 }
 
 .img {
@@ -64,17 +65,11 @@
 }
 
 
-.blend {
-    height: 96%;
-    position: absolute;
-    width: 100%;
-    opacity: 1;
-}
 
 .up {
     z-index: 1;
     position: absolute;
-    top: 6rem;
+    top: 10rem;
     left: 3.5rem;
 }
 
@@ -86,14 +81,14 @@
 
 @media only screen and (min-width: 1025px) {
     .updown {
-        top: 52%;
+        top: 40rem;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .updown {
-        top: 50%;
-        right: 1rem;
+        top: 40rem;
+        right: 0.5rem;
     }
 }
 
@@ -124,7 +119,7 @@
     }
 
     .updown {
-        top: 50%;
+        top: 37rem;
         width: 50px;
         height: auto;
         right: 1rem;
@@ -160,6 +155,7 @@
     }
 
     .updown {
+        top: 34rem;
         width: 50px;
         height: auto;
     }
@@ -168,9 +164,6 @@
         margin-bottom: 1.5rem;
     }
 
-    .updown {
-        top: 55%;
-    }
 
 }
 
@@ -179,11 +172,25 @@
     .container {
         display: flex;
         flex-direction: column;
-        margin-left: 25%;
+        margin-left: 12%;
+    }
+
+    .box {
+        width: 200px;
+        height: 150px;
+    }
+
+    .small-text {
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
     }
 
     .top {
-        margin-right: 15%;
+        margin-left: 10vw;
+    }
+
+    .heading {
+        margin-top: 2.7rem;
     }
 
     .up {
@@ -192,7 +199,7 @@
     }
 
     .updown {
-        top: 100%;
+        top: 67rem;
         width: 50px;
         height: auto;
         right: 1rem;
@@ -202,10 +209,10 @@
 
 @media only screen and (max-width: 375px) {
     .container {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
-    .updown {
-        top: 120%;
+    .top {
+        margin-left: 8vw;
     }
 }

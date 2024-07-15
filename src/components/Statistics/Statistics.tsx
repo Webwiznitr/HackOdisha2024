@@ -3,13 +3,11 @@ import "./Stats.css"
 import Image from 'next/image'
 import right from "./images/right.png"
 import left from "./images/left.png"
-import cardboard from "./images/cardboard-texture 1.png"
 import up from "./images/Brutalist 113.png"
 import updown from "./images/Brutalist 114.png"
 const Statistics = () => {
   return (
     <div className='Statistics'>
-      <Image src={cardboard} className='blend' alt='' />
       <div className='flex top 2xl:ml-[42vw] xl:ml-[36vw] lg:ml-[34vw] md:ml-[30vw] sm:ml-[24vw]'>
         <div className='img mt-12'>
           <Image src={right} width={78} height={28} alt="" />
