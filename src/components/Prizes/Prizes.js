@@ -24,7 +24,7 @@ const Prizes = () => {
 
         <div className="box pt-20 justify-center">
 
-          <div className="card1 h-36 w-60 bg-[#FFF6E0] mt-14 rounded-[6.54px] ml-20 sm:ml-56 lg:h-48 lg:w-80 lg:ml-80 lg:mt-28">
+          <div className="card1 h-36 w-60 bg-[#FFF6E0] mt-14 rounded-[6.54px] hover:scale-105 transition ml-20 sm:ml-56 lg:h-48 lg:w-80 lg:ml-80 lg:mt-28">
 
 
             <div className="Frame2"><img src={Frame2} alt="no-render" className='absolute z-40 h-24 w-24 mt-[-30px] ml-[-34px] lg:h-32 lg:w-32 lg:ml-[-46px] lg:mt-[-40px]'/>
@@ -52,7 +52,7 @@ const Prizes = () => {
           </div>
 
 <div className="box2 ml-20 sm:flex mt-4 lg:mt-12">
-          <div className="card2 h-36 w-60 bg-[#FFF6E0] mt-10 rounded-[6.54px] sm: mr-16 lg:h-48 lg:w-80 lg:mr-24">
+          <div className="card2 h-36 w-60 bg-[#FFF6E0] mt-10 rounded-[6.54px] hover:scale-105 transition sm: mr-16 lg:h-48 lg:w-80 lg:mr-24">
 
             <div className="Frame2"><img src={Frame2} alt="no-render" className='absolute z-40 h-24 w-24 mt-[-30px] ml-[-34px] lg:h-32 lg:w-32 lg:ml-[-46px] lg:mt-[-40px]'/>
             <div className="content absolute z-50 font-dela-gothic font-normal text-white text-[11px] ml-[-21px] lg:text-[14px] lg:ml-[-25px]">Cash Prize <br /> 
@@ -78,7 +78,7 @@ const Prizes = () => {
           </div>
 
           
-          <div className="card3 h-36 w-60 bg-[#FFF6E0] mt-10 mb-20 rounded-[6.54px] sm: mr-16 lg:h-48 lg:w-80 lg:ml-24 lg:mb-28">
+          <div className="card3 h-36 w-60 bg-[#FFF6E0] mt-10 mb-20 rounded-[6.54px] hover:scale-105 transition sm: mr-16 lg:h-48 lg:w-80 lg:ml-24 lg:mb-28">
             <div className="Frame2"><img src={Frame2} alt="no-render" className='absolute z-40 h-24 w-24 mt-[-30px] ml-[-34px] lg:h-32 lg:w-32 lg:ml-[-46px] lg:mt-[-40px]'/>
             <div className="content absolute z-50 font-dela-gothic font-normal text-white text-[11px] ml-[-21px] lg:text-[14px] lg:ml-[-25px]">Cash Prize <br /> 
             <div className="content2 absolute z-50 font-dela-gothic font-normal text-[#FFC900] text-[16px] ml-[-21px] pl-[38px] text-stroke-outline lg:text-[22px] lg:mr-[-34px]">25k</div></div>
