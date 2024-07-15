@@ -18,7 +18,7 @@ const Prizes = () => {
 
 
         <div className="parentBox flex justify-center flex-row-reverse">
-          <div className="UpperRightLogo absolute ml-72 mt-24 sm:-mr-72 lg:mr-[-55rem] lg:mt-36"><img src={UpperRightLogo} alt="re-render" className='pl-4 lg:h-12'/></div>
+          <div className="UpperRightLogo absolute ml-72 mt-24 sm:-mr-72  lg:mr-[-42rem] lg:mt-36 xl:mr-[-55rem] xl:mt-36"><img src={UpperRightLogo} alt="re-render" className='pl-4 lg:h-12'/></div>
 
 
 
@@ -108,7 +108,7 @@ const Prizes = () => {
 
 
 
-        <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[43rem] lg:mr-[78rem]"><img src={LowerLeftLogo} alt="re-render" className=' lg:h-12'/></div>
+        <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[62rem] xl:mt-[43rem] xl:mr-[78rem]"><img src={LowerLeftLogo} alt="re-render" className=' lg:h-12'/></div>
         </div>
 
       </div>
