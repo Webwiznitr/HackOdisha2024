@@ -1,3 +1,5 @@
+// md:mt-[92rem]
+// lg:mt-[60rem]
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
@@ -42,7 +44,7 @@ const Team: React.FC = () => {
       <div className=" bg-customPink w-full h-full pt-10 lg:pb-0 md:pb-0 pb-10">
         <div ref={star2Ref} className="image-colored">
           <Image
-            className="star2 absolute lg:size-12 rotate-45 lg:mt-24 ml-auto lg:right-24 md:right-16 md:size-9 md:mt-32 size-5 right-12 mt-16"
+            className="star2 absolute lg:size-12 rotate-45 lg:mt-24 ml-auto lg:right-24 custom-750:size-10 custom-345:size-6 custom-500:size-8 md:right-16 md:size-9 md:mt-32 size-5 right-12 mt-16"
             src={star2}
             alt="Star2"
           />
@@ -50,7 +52,7 @@ const Team: React.FC = () => {
         <div>
           <div ref={star1Ref} className="image-colored">
             <Image
-              className=" star1 absolute lg:mt-[60rem] rotate-45 lg:size-12 lg:left-10 md:mt-[92rem] md:left-12 md:size-9 size-5 left-5 mt-[118rem]"
+              className=" star1 absolute custom-420:mt-[135rem] custom-355:mt-[115rem] custom-345:mt-[108rem] custom-345:size-6  custom-385:mt-[123rem] custom-1080:mt-[55rem] custom-940:mt-[83rem] custom-770:mt-[140rem] custom-770:left-12 custom-535:mt-[140rem] custom-500:mt-[140rem] custom-500:left-5 rotate-45 lg:size-12 lg:left-10  md:left-10 md:size-9 size-8 left-5 "
               src={star1}
               alt="Star1"
             />
@@ -109,7 +111,7 @@ const Team: React.FC = () => {
             height={404.31}
           />
           <Image
-            className="lg:pt-14 md:pt-20"
+            className="lg:pt-14 md:pt-28"
             src={ManagementHead}
             alt="ManagementHead"
             width={397.41}

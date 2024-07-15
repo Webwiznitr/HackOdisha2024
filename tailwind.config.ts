@@ -17,6 +17,19 @@ const config: Config = {
       colors:{
         customPink: '#624353',
       },
+
+      screens: {
+        'custom-1080': {'min': '1080px'},
+        'custom-940': {'max': '940px'},
+        'custom-770': {'max': '770px'},
+        'custom-535': {'max': '535px'},
+        'custom-500': {'max': '500px'},
+        'custom-420': {'max': '420px'},
+        'custom-385': {'max': '385px'},
+        'custom-355': {'max': '355px'},
+        'custom-345': {'max': '330px'},
+
+      },
     },
   },
   plugins: [],
