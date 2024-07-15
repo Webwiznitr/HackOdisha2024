@@ -16,10 +16,10 @@ const AreUReady = () => {
       className='absolute top-6 right-4 sm:block sm:w-[5rem] md:w-[7rem] lg:mr-20'
       >
       </video>
-      <h2 className='text-white text-md sm:text-2xl   lg:text-4xl font-archivoBlack'>ARE YOU READY?</h2>
+      <h2 className='text-white text-lg sm:text-2xl lg:text-4xl font-archivoBlack'>ARE YOU READY?</h2>
       <p 
       className='font-dela-gothic text-white text-center sm:leading-[3.5rem] lg:leading-[4rem] px-[1rem] 
-      text-lg pt-[3rem] sm:pt-[4rem] sm:text-3xl lg:text-4xl max-w-[30rem] sm:max-w-[40rem] lg:max-w-[45rem]' 
+      text-xl pt-[3rem] sm:pt-[4rem] sm:text-3xl lg:text-4xl max-w-[30rem] sm:max-w-[40rem] lg:max-w-[45rem]' 
       style={{
         textShadow: "4px 4px 0 #000",
         WebkitTextStroke: "1px #000"
