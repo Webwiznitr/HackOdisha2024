@@ -1,5 +1,6 @@
 import Sponsors from "@/components/Sponsors/Sponsors";
 import Timeline from "./Timeline/Timeline";
+import Footer from "@/components/Footer/page";
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
         {/* Import and add your respective component here */}
         <Timeline />
         <Sponsors />
+        <Footer/>
       </main>
     )
 }

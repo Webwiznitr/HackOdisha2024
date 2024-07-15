@@ -19,6 +19,7 @@ const config: Config = {
         "dela-gothic": "var(--font-dela-gothic-one)",
         archivoBlack: "var(--archivo-black)",
         archivo: "var(--archivo)",
+        oxanium:"var(--font-oxanium)",
       },
 
       screens: {
