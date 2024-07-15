@@ -1,3 +1,4 @@
+import { Oxanium } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -19,6 +20,7 @@ const config: Config = {
         "dela-gothic": "var(--font-dela-gothic-one)",
         archivoBlack: "var(--archivo-black)",
         archivo: "var(--archivo)",
+        Oxanium: "var(--font-oxanium)",
       },
 
       screens: {
