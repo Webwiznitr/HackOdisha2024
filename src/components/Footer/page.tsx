@@ -25,7 +25,7 @@ const Footer = () => {
           Become a sponser
         </button>
       </div>
-      <div className="sitemap mr-[19px] sm:mr-[26px] md:mr-[80px] 2xl:mr-[268px]">
+      <div className="site mr-[19px] sm:mr-[26px] md:mr-[80px] 2xl:mr-[268px]">
         <h1 className='font-archivoBlack font-normal text-[16px] sm:text-[25px] 2xl:text-[32px]'>Site map</h1>
         <ul className='mt-5'>
           {

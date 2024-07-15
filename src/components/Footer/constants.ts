@@ -22,7 +22,7 @@ export const socialmediaicons:socialmedia[]=[
     },
     {   id:3,
         Image:'https://res.cloudinary.com/dgtdkqfsx/image/upload/v1720945480/icon_2_nqifjp.png',
-        link:"" //X
+        link:"" //Xsss
     },
     {   id:4,
         Image:'https://res.cloudinary.com/dgtdkqfsx/image/upload/v1721031090/icon_3_kpedqg.png',
