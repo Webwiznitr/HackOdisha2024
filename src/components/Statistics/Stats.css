@@ -42,7 +42,7 @@
 }
 
 
-.box-content {
+.box h1 p {
     transform: skew(20deg);
 }
 
