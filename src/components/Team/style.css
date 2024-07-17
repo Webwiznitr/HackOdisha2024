@@ -1,0 +1,50 @@
+@media (min-width: 1080px) {
+    .team {
+      font-weight: 800;
+      color: #e16c00;
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+        2px 2px 0 #000, 3.5px 3.5px 0 #ffffff;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .team {
+      color: #e16c00;
+      font-weight: 800;
+      letter-spacing: 0.2rem;
+      text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000, 2.5px 2.5px 0 #ffffff;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .team {
+      color: #e16c00;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000, 1.5px 1.5px 0 #ffffff;
+    }
+  }
+  
+  .image-colored {
+    filter: invert(60%) sepia(80%) saturate(800%) hue-rotate(-60deg)
+      brightness(70%) contrast(200%);
+  }
+  
+  @media (max-width: 800px) {
+    .star2 {
+      background-image: url("../Team/team/star2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .star1 {
+      background-image: url("../Team/team/star1.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
