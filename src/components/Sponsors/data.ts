@@ -79,3 +79,5 @@ export const sponsors = [
         ],
     },
 ];
+
+const sponsorsData = {};
