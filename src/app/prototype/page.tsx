@@ -1,4 +1,3 @@
-
 import Prizes from "@/components/Prizes/Prizes";
 import AboutUs from "@/components/AboutUs/About";
 import Sponsors from "@/components/Sponsors/Sponsors";
@@ -9,22 +8,19 @@ import AreUReady from "@/components/AreUReady/AreUReady";
 import Footer from "@/components/Footer/page";
 import Team from "@/components/Team/Team";
 
-
 export default function Home() {
     return (
-
         <main className="flex justify-center flex-col">
             Testing Home Page
             {/* Import and add your respective component here */}
-            
-            <AreUReady/>
-            <AboutUs/>
-            <Team/>
-            <Statistics/>
+            <AreUReady />
+            <AboutUs />
+            {/* <Team/> */}
+            <Statistics />
             <Timeline />
             <Prizes />
             <Sponsors />
-            <Footer/>
+            <Footer />
         </main>
     );
 }
