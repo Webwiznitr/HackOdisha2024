@@ -14,6 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
+      fontFamily: {
+        inter: "var(--font-inter)",
+        "dela-gothic": "var(--font-dela-gothic-one)",
+        archivoBlack: "var(--archivo-black)",
+        archivo: "var(--archivo)",
+        oxanium:"var(--font-oxanium)",
+      },
+      
       colors:{
         customPink: '#624353',
       },
