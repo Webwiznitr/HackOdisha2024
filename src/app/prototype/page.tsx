@@ -16,7 +16,7 @@ export default function Home() {
             <AreUReady />
             <AboutUs />
             {/* <Team/> */}
-            <Statistics />
+            {/* <Statistics /> */}
             <Timeline />
             <Prizes />
             <Sponsors />

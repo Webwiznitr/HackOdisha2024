@@ -6,8 +6,11 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 const AboutUs = () => {
 
     const isMobile = () => {
-      // Adjust this based on your actual breakpoint for mobile devices
-      return window.innerWidth <= 768;
+      if (typeof window !== 'undefined') {
+        // Adjust this based on your actual breakpoint for mobile devices
+        return window.innerWidth <= 768;
+      }
+      return false;
     };
   
     const getParallaxSpeed = () => {
