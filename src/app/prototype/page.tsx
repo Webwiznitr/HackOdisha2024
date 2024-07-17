@@ -1,3 +1,4 @@
+
 import Prizes from "@/components/Prizes/Prizes";
 import AboutUs from "@/components/AboutUs/About";
 import Sponsors from "@/components/Sponsors/Sponsors";
@@ -7,6 +8,7 @@ import Statistics from "@/components/Statistics/Statistics";
 import AreUReady from "@/components/AreUReady/AreUReady";
 import Footer from "@/components/Footer/page";
 import Team from "@/components/Team/Team";
+import Faq from "@/components/FAQ/Faq.js";
 
 export default function Home() {
     return (
@@ -20,7 +22,9 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <Sponsors />
+            <Faq/>
             <Footer />
         </main>
     );
+
 }
