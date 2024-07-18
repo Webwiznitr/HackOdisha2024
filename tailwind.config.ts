@@ -1,3 +1,4 @@
+import { Oxanium } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {

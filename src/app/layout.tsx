@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Dela_Gothic_One, Inter, Archivo_Black, Archivo,Oxanium } from "next/font/google"
 import "./globals.css"
 
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -12,10 +13,10 @@ const delaGothicOne = Dela_Gothic_One({
   variable: "--font-dela-gothic-one",
   weight: ["400"],
 })
-const oxanium=Oxanium({
+const oxanium = Oxanium({
   subsets: ["latin"],
   variable: "--font-oxanium",
-  weight: ["700"],
+  weight: ["400"],
 })
 
 const archivo_black = Archivo_Black({
