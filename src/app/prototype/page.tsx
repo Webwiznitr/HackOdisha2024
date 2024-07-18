@@ -21,7 +21,7 @@ export default function Home() {
             <Navbar />
             <HeroSection />
             <AreUReady />
-            {/* <AboutUs /> */}
+            <AboutUs />
             <Team/>
             <Statistics />
             <Timeline />
