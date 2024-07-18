@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Dela_Gothic_One, Inter, Archivo_Black, Archivo } from "next/font/google"
+import { Dela_Gothic_One, Inter, Archivo_Black, Archivo,Oxanium } from "next/font/google"
 import "./globals.css"
 import { Oxanium } from "next/font/google"
 
@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable}`}
+        className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable} ${oxanium.variable}`}
       >
         {children}
       </body>
