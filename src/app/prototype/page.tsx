@@ -27,7 +27,7 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <Sponsors />
-             <Faq/> 
+            <Faq/> 
             <Footer />
         </main>
     );
