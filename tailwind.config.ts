@@ -34,7 +34,6 @@ const config: Config = {
         'custom-500': {'max': '500px'},
         'custom-420': {'max': '420px'},
         'custom-320': {'max': '320px'},
-        
 
       },
     },

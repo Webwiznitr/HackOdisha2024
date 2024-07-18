@@ -1,24 +1,4 @@
 .text-stroke-outline {
   -webkit-text-stroke: #000 1px;
 }
-  .image-colored {
-    filter: invert(60%) sepia(80%) saturate(800%) hue-rotate(-60deg)
-      brightness(70%) contrast(200%);
-  }
-  
-  @media (max-width: 800px) {
-    .star2 {
-      background-image: url("../Team/team/star2.png");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .star1 {
-      background-image: url("../Team/team/star1.png");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
   
