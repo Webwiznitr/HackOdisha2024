@@ -7,39 +7,51 @@ import up from "./images/Brutalist 113.png"
 import updown from "./images/Brutalist 114.png"
 const Statistics = () => {
   return (
-    <div className='Statistics'>
-      <div className='flex top 2xl:ml-[42vw] xl:ml-[36vw] lg:ml-[34vw] md:ml-[30vw] sm:ml-[24vw]'>
-        <div className='img mt-12'>
-          <Image src={right} width={78} height={28} alt="" />
+    <main className='Statistics bg-[#FFF6E0]'>
+      <div>
+        <div className=' flex justify-center items-center '>
+          <div className=' mr-2'><Image src={right} alt="right arrow" /></div>
+          <div className=' text-[2rem] lg:text-4xl' style={{
+            fontWeight: 'bold',
+            color: '#BF2E2E',
+            textShadow: `
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000,
+        1px 2px 0 #FFF6E0,
+        2px 3px 0 #131313`
+          }}>STATISTICS</div>
+          <div className=' ml-2'><Image src={left} alt="left arrow" /></div>
         </div>
-        <div className='heading mt-8 ml-4 mr-4'>
-          <h1>STATISTICS</h1>
+        <div className=' relative'>
+          <div><Image className=' absolute md:-top-[5%] -top-[20%] w-auto  md:left-[3.5rem] left-[1rem]' src={up} alt="" /></div>
+          <div><Image className=' absolute md:top-[85%] top-[105%] w-auto md:right-[2.8rem] right-[1rem]' src={updown} alt="" /></div>
+        <div className=' flex-col xl:w-[45%] sm:w-[65%] w-[88%] m-auto flex-wrap justify-center items-center '>
+          <div className='flex flex-row justify-between mt-20'>
+          <div className=' bg-[#E56E00] stats-box text-white md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
+            <h1 className=' font-bold text-4xl'>50+</h1>
+            <p>Registrations</p>
+          </div>
+          <div className='bg-[#E56E00] stats-box text-white   md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem]  flex flex-col justify-center items-center'>
+            <h1 className=' font-bold text-4xl'>50+</h1>
+            <p className=' '>Registrations</p>
+          </div>
+          </div>
+          <div className='flex flex-row justify-between mt-20 mb-24'>
+          <div className='bg-[#E56E00] stats-box text-white   md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
+            <h1 className=' font-bold text-4xl'>50+</h1>
+            <p>Registrations</p>
+          </div>
+          <div className='bg-[#E56E00] stats-box text-white  md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
+            <h1 className=' font-bold text-4xl'>50+</h1>
+            <p>Registrations</p>
+          </div>
+          </div>
         </div>
-        <div className='img mt-12'>
-          <Image src={left} width={78} height={28} alt="" />
         </div>
       </div>
-      <div className='container grid grid-flow-col grid-rows-2 2xl:ml-[28vw] 2xl:mr-[24vw] xl:ml-[15vw] xl:mr-[10vw] xl:mt-10 lg:ml-[8%] lg:mr-24 md:ml-[12%] md:mr-24 md:mt-16 sm:ml-16 sm:mt-16 sm:mr-12'>
-        <div className='box'>
-          <h1 className='big-text'>50+</h1>
-          <p className='small-text'>Registrations</p>
-        </div>
-        <div className='box'>
-          <h1 className='big-text'>50+</h1>
-          <p className='small-text'>Registrations</p>
-        </div>
-        <div className='box'>
-          <h1 className='big-text'>50+</h1>
-          <p className='small-text'>Registrations</p>
-        </div>
-        <div className='box'>
-          <h1 className='big-text'>50+</h1>
-          <p className='small-text'>Registrations</p>
-        </div>
-      </div>
-      <div className='up'><Image src={up} alt="" /></div>
-      <div className='updown'><Image src={updown} alt="" /></div>
-    </div>
+    </main>
   )
 }
 
