@@ -13,7 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-
+      fontFamily: {
+        inter: "var(--font-inter)",
+        "dela-gothic": "var(--font-dela-gothic-one)",
+        archivoBlack: "var(--archivo-black)",
+        archivo: "var(--archivo)",
+        oxanium: "var(--font-oxanium)",
+    },
       colors:{
         customPink: '#624353',
       },
@@ -21,13 +27,14 @@ const config: Config = {
       screens: {
         'custom-1080': {'min': '1080px'},
         'custom-940': {'max': '940px'},
-        'custom-770': {'max': '770px'},
-        'custom-535': {'max': '535px'},
+        'custom-850': {'max': '850px'},
+        'custom-767': {'max': '767px'},
+        'custom-590': {'max': '590px'},
+        'custom-560': {'max': '560px'},
         'custom-500': {'max': '500px'},
         'custom-420': {'max': '420px'},
-        'custom-385': {'max': '385px'},
-        'custom-355': {'max': '355px'},
-        'custom-345': {'max': '330px'},
+        'custom-320': {'max': '320px'},
+        
 
       },
     },

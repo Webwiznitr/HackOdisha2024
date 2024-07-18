@@ -15,10 +15,10 @@ export default function Home() {
             Testing Home Page
             {/* Import and add your respective component here */}
             
-            <AreUReady/>
+             <AreUReady/>
             <AboutUs/>
             <Team/>
-            <Statistics/>
+             <Statistics/>
             <Timeline />
             <Prizes />
             <Sponsors />
