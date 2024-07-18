@@ -78,6 +78,7 @@ const Team: React.FC = () => {
       <div className="grid lg:gap-20 md:gap-16 gap-10 lg:grid-cols-3 grid-cols-2 lg:px-24 md:px-20 px-10 justify-items-center justify-center py-28 ">
         {TeamMembers.map((TeamMember) => (
           <TeamCard
+            key={TeamMember.id}
             imgSrc={TeamMember.imgSrc}
             title={TeamMember.title}
             position={TeamMember.position}
@@ -89,3 +90,4 @@ const Team: React.FC = () => {
 };
 
 export default Team;
+ 
