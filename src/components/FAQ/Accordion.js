@@ -14,9 +14,9 @@ export default function Accordion(props) {
   }, [props.isOpen]);
 
   return (
-    <div className={`container  w-full   mt-4 mb-4 `}>
-      <div className="container flex w-full ">
-        <div className="nig border border-black bg-white relative w-full   ">
+    <div className={` w-full   mt-4 mb-4 `}>
+      <div className=" flex w-full ">
+        <div className="nig border border-black bg-white relative w-full  ">
           <div
             className="title w-full bg-white flex justify-between items-center cursor-pointer p-4 pl-8"
             onClick={props.toggleAccordion}
@@ -48,12 +48,12 @@ export default function Accordion(props) {
             </div>
           </Collapse>
         </div>
-        <div className="right h-30 pt-4 ">
+        <div className="right w-[9px] h-30 pt-4">
           <div className={`sub-top border border-black relative w-full h-full ${bgColor}`}></div>
         </div>
       </div>
       
-      <div className="bottom pl-4 relative  w-full h-[11px] ">
+      <div className="bottom pl-3 relative h-2 w-full ">
         <div className={`sub-bottom border border-black relative ${bgColor} h-full`}></div>
       </div>
     </div>

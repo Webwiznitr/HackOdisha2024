@@ -67,7 +67,7 @@ export default function Faq() {
 
   return (
     <div className="bg-[#FFF6E0] flex justify-between">
-      <div className="w-1/6 h-[240vh] flex flex-col justify-between">
+      <div className="w-1/6 md:h-[82rem] sm:h-[80rem]  flex flex-col justify-between">
         <div className="w-full flex justify-center mt-32">
           <svg
             className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
@@ -83,7 +83,7 @@ export default function Faq() {
             />
           </svg>
         </div>
-        <div className="w-full flex justify-center items-end mb-24">
+        <div className="w-full flex justify-center items-end lg:pb-10  ">
           <svg
             className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
             xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +203,7 @@ export default function Faq() {
             </svg>
           </div>
           <div className="w-full h-6"></div>
-
+          <div className=" prob ">
           {accordionData.map((data, index) => (
             <Accordion
               key={index}
@@ -213,9 +213,11 @@ export default function Faq() {
               answer={data.answer}
             />
           ))}
+          </div>
+         
         </div>
       </div>
-      <div className="w-1/6 h-[240vh] flex flex-col justify-center items-center">
+      <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center">
         <svg
          className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
           xmlns="http://www.w3.org/2000/svg"
