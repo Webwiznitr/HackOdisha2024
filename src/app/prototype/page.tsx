@@ -16,13 +16,13 @@ export default function Home() {
             Testing Home Page
             {/* Import and add your respective component here */}
             <AreUReady />
-            <AboutUs />
+            {/* <AboutUs /> */}
             {/* <Team/> */}
             {/* <Statistics /> */}
             <Timeline />
             <Prizes />
             <Sponsors />
-            <Faq/>
+            {/* <Faq/> */}
             <Footer />
         </main>
     );
