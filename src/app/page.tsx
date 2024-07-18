@@ -3,8 +3,8 @@ import Team from "@/components/Team/Team";
 
 export default function Home() {
   return (
-    <main>
-          <Team/>
+
+    <main className="flex min-h-screen flex-col items-center justify-between">
     </main>
   );
 }

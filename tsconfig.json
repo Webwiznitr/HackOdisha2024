@@ -22,7 +22,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Prizes/Prizes.js","src"],
 
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/FAQ/Faq.js", "src/components/Prizes/Prizes.js", "src"],
   "exclude": ["node_modules"]
 }
