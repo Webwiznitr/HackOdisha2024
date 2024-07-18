@@ -1,4 +1,4 @@
-.box {
+.stats-box {
     transform: skew(-20deg);
     box-shadow:
         5px 5px 0 #FFF6E0,
@@ -6,7 +6,7 @@
 }
 
 
-.box h1 p {
+.stats-box h1 p {
     transform: skew(20deg);
 }
 
