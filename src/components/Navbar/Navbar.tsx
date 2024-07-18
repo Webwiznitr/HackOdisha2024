@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                 key={item.id}
                 className="justify-between items-center md:text-xl py-4"
               >
-                <Link className="md:px-7 hidden md:flex mt-4 font-bold md:text-sm font-oxanium" href={item.path}>
+                <Link className="md:px-7 hidden md:flex mt-4 font-bold md:text-sm font-oxanium hover:text-[#D03441]" href={item.path}>
                   {item.title}
                 </Link>
               </div>
@@ -136,7 +136,7 @@ const Navbar: React.FC = () => {
           <div>
             <div className="flex md:hidden w-screen absolute z-300">
               {isMenuOpen ? (
-                <div className="flex flex-col justify-center gap-8 items-center text-center w-full h-screen bg-[#FBCB93] text-black font-bold">
+                <div className="flex flex-col justify-center gap-8 items-center text-center w-full h-screen bg-[#FBCB93] text-black hover:text-[#D03441] font-bold">
                   {NavData.map((item, index) => {
                     return (
                       <div

@@ -1,59 +1,22 @@
-"use client"
-import React from "react"
-import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+import React from "react";
+import Image from "next/image";
 import Herohack from "./Herohack";
-export default function HeroSection() {
-  return(
-    <ParallaxProvider>
-      <Component />
-    </ParallaxProvider>
-  )
-}
-const Component = () => {
+
+export default function HeroSection(){
   return (<div>
-    <ParallaxBanner
-      layers={[
-        { image: './images/below.svg', speed: 0 },
-        {
-          speed: -70,
-          children: (
-            <div className="absolute inset-0 flex items-center justify-center md:-top-28 sm:-top-48 -top-96 -mt-24 lg:mt-2 max-[500px]:-mt-20 max-[400px]:-mt-32 max-[600px]:-mt-8 max-[640px]:-mt-0 max-[350px]:-mt-48">
-              <Herohack />
+        <div className="relative h-[30rem]  md:h-[43rem] 2xl:h-[50rem] bg-white overflow-hidden">
+                <Image
+                    src="/images/below-2.svg"
+                    alt="gradient"
+                    layout="fill"
+                    className="object-cover z-10  object-bottom scale-125 sm:scale-100"
+                />
+                <div className=" fixed top-[5rem] z-20 flex justify-center items-center w-full m-auto">
+                    <Herohack />
+                </div>
+            
+              <Image src={"/images/Top.svg"} alt="below" width={128} height={128} className="w-full z-30 absolute bottom-0" style={{pointerEvents: "none"}}/>
+           
             </div>
-          ),
-        },
-        { image: './images/Top.svg', speed: 0 },
-      ]}
-      className="aspect-[2/1] bg-auto bg-bottom w-full"
-    />
-    <div>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-      <h1>Hellov kv s</h1>
-    </div>
-    
- </div> );
-};
+</div>)
+}

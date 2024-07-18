@@ -1,0 +1,11 @@
+.aspectt {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%;
+}
+
+.bg-fixed {
+  background-attachment: contain !important;
+  background-size: cover;
+  background-position: center center;
+}

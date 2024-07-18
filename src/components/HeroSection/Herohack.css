@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "brandon";
+    src: url("../fonts/brandon-bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "ARP";
+    src: url("../fonts/ARPDisplay-80.ttf");
+}
+
+.font-brandon{
+    font-family: "brandon";
+}
+.font-ARP {
+    font-family: "ARP";
+}
+@media only screen and (min-width: 640px) {
+    .shadow{
+        text-shadow: 9px 5px 0px #000;
+        border: none;
+        box-shadow: 0 0 0 #000;
+    }
+  }
+@media only screen and (max-width: 640px) {
+    .shadow{
+        text-shadow: 5px 3px 0px #000;
+        border: none;
+        box-shadow: 0 0 0 #000;
+    }
+  }
