@@ -53,10 +53,12 @@ const Navbar: React.FC = () => {
       >
         <div className="m-3 hidden md:flex pt-2">
           <Link href="/">
-          <img
+          <Image
               src="./images/HO4.svg"
               alt="logo"
-              className="w-4 h-1 md:w-36 md:h-10 cursor-pointer border-2"
+              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer"
+              width={128}
+              height={128}
             />
           </Link>
         </div>
@@ -75,12 +77,12 @@ const Navbar: React.FC = () => {
           })}
         </div>
         <div className="w-screen md:hidden flex flex-col z-[300]">
-          <div className="flex  justify-between m-4  md:hidden">
+          <div className="flex justify-between md:hidden">
             <Link href="/">
             <Image
                 src="./images/HO4.svg"
                 alt="logo"
-                className=" cursor-pointer"
+                className=" h-8 w-12 m-2 cursor-pointer"
                 width={128}
                 height={128}
               />
@@ -96,8 +98,8 @@ const Navbar: React.FC = () => {
                   }`}
                   style={{ filter: "drop-shadow(0px 0.8px 0px #000)" }}
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 16 16"
               >
                 <path
