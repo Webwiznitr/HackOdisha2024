@@ -1,6 +1,6 @@
 import React from "react";
 import SponserLogo from "./SponserLogo";
-import { wavyLine } from "./data";
+import { wavyLine } from "./constants";
 import Image from "next/image";
 
 interface SponsorProps {
