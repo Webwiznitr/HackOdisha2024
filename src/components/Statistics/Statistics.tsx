@@ -7,11 +7,11 @@ import up from "./images/Brutalist 113.png"
 import updown from "./images/Brutalist 114.png"
 const Statistics = () => {
   return (
-    <main className='Statistics bg-[#FFF6E0] z-40  mb-[-0.8rem]'>
+    <main className='Statistics bg-[#FFF6E0] z-40  mb-[-0.8rem] pt-8'>
       <div>
         <div className=' flex justify-center items-center '>
           <div className=' mr-2'><Image src={right} alt="right arrow" /></div>
-          <div className=' text-[2rem] lg:text-4xl m-8' style={{
+          <div className=' text-[2rem] lg:text-4xl ' style={{
             fontWeight: 'bold',
             color: '#BF2E2E',
             textShadow: `

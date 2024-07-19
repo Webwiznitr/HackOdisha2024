@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
     <>
       <nav
         className={
-          "bg-[#FBCB93] static sm-0 w-full flex "
+          "bg-[#FBCB93] shadow-lg fixed z-50 sm-0 w-full flex top-0"
         }
       >
         <div className="m-3 hidden md:flex pt-2">
