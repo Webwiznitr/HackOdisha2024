@@ -4,7 +4,7 @@ import { cardboardTexture } from "../Sponsors/data";
 
 const Prizes = () => {
   return (
-    <div>
+    <div className='z-40  mb-[-0.8rem]' id='prizes'>
       <div className="body bg-[#604151] flex justify-center overflow-hidden">
 
 
@@ -100,6 +100,7 @@ const Prizes = () => {
             </div>
             <div className="outline1 border-white border-[1.96px] mt-[-136px] ml-2 w-60 h-36 rounded-[6.54px] relative z-10 lg:h-[190px] lg:w-80 lg:mt-[-182px]"></div>
           </div>
+    
 
 </div>
 
@@ -108,7 +109,7 @@ const Prizes = () => {
 
 
 
-        <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[62rem] xl:mt-[43rem] xl:mr-[78rem]"><img src={LowerLeftLogo} alt="re-render" className=' lg:h-12'/></div>
+        <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[60rem] xl:mt-[43rem] xl:mr-[75rem]"><img src={LowerLeftLogo} alt="re-render" className=' lg:h-12'/></div>
         </div>
 
       </div>

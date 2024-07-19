@@ -20,7 +20,7 @@ const Timeline = () => {
 
   return (
     <main
-      className="relative flex flex-col items-center bg-[#FFF6E0] z-10 pb-12 overflow-x-hidden"
+      className="relative flex flex-col items-center bg-[#FFF6E0] pb-12 overflow-x-hidden z-40  mb-[-0.8rem]"
       id="timeline-main"
     >
       <div id="timeline-main-background"></div>

@@ -5,7 +5,9 @@ import { ho4logo, mountains, pinetrees, rightarrowicon,socialmediaicons} from '.
 const Footer = () => {
   return (
     <>
-      <section className='bg-[#F9F0DB] h-[375px] sm:h-[550px] 2xl:h-[620px] border-t-2 border-black border-solid pt-[24px] sm:pt-10 md:pt-8 lg:pt-14'>
+      <section
+      id='contactus'
+       className='bg-[#F9F0DB] h-[375px] sm:h-[550px] 2xl:h-[620px] border-t-2 border-black border-solid pt-[24px] sm:pt-10 md:pt-8 lg:pt-14 z-40  mb-[-0.8rem]'>
       <div className="sponsorandsitemap w-[100%] flex justify-between">
       <div className="becomeasponsor ml-[20px] md:ml-[50px] sm:ml-[35px] 2xl:ml-[115px] flex flex-col justify-start
        sm:gap-7 md:gap-6 gap-[20px] 2xl:gap-10 max-w-[455px]">
@@ -18,7 +20,7 @@ const Footer = () => {
         />
         <p className='text-[#454545] text-[15px] sm:text-[20px] md:text-[25px] 2xl:text-[32px] font-[600] font-oxanium'>
           Want to become a sponsor of<br></br> Hackodisha 4.0 ?</p>
-        <button type="button" className='bg-[#E16C00] py-[8px] px-[16px] sm:py-5 md:px-8 sm:px-6 2xl:px-10 2xl:py-5
+        <button type="button" className='bg-[#E16C00] hover:bg-[#a7552f] py-[8px] px-[16px] sm:py-5 md:px-8 sm:px-6 2xl:px-10 2xl:py-5
          rounded-[6px] sm:rounded-xl text-[#FFFFFF] 
         font-oxanium font-bold text-[13px] sm:text-[17px] md:text-[21px] 2xl:text-[28px] w-3/4 border-[3px]
          border-black border-solid shadow-[4px_4px_0_0_rgba(0,0,0,0.75)]'>
@@ -30,8 +32,8 @@ const Footer = () => {
         <ul className='mt-5'>
           {
             ['About us','Prizes','Contact us','Sponsers','FAQs'].map((item, index) => {
-                return <li key={index} className='text-[12px] sm:text-[20px] 2xl:text-[25px] font-archivo font-semibold mb-2 flex items-center gap-3'>
-                  <a href={`#${item.toLowerCase()}`}>{item}</a>
+                return <li key={index} className='text-[12px] sm:text-[20px]  hover:scale-105 2xl:text-[25px] font-archivo font-semibold mb-2 flex items-center gap-3'>
+                   <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
                   <Image
                     src={rightarrowicon}
                     alt="icon"
@@ -45,7 +47,7 @@ const Footer = () => {
         </ul>
       </div>
       </div>
-      <div className="socialmedia flex gap-[9px] sm:gap-2 md:gap-7 mt-10 max-w-fit mx-auto mb-10 lg:hidden">
+      <div className="socialmedia flex gap-[9px] sm:gap-2 md:gap-7 md:mt-[6rem] mt-10 max-w-fit mx-auto mb-10 lg:hidden">
           {
             socialmediaicons.map((value,index)=>{
               return <a href={value.link} key={index} className='flex items-center'>
@@ -59,7 +61,8 @@ const Footer = () => {
             })
           }
       </div>
-      <div className="images flex justify-between items-center lg:mt-16">
+
+      <div className="images flex justify-between items-center lg:mt-16 md:mt-[-4rem]">
         <span className='mountains lg:mt-10'>
         <Image
           src={mountains}
@@ -93,9 +96,9 @@ const Footer = () => {
         </span>
       </div>
     </section>
-    <div className="blackcontainer bg-black max-w-full py-[10px] px-[22px] sm:py-3 sm:px-24 2xl:px-24">
+    <div className="blackcontainer flex justify-center items-center text-center bg-black max-w-full py-[10px] px-[22px] sm:py-[1rem] sm:px-24 2xl:px-24">
       <p className='font-oxanium font-semibold text-[10px] sm:text-[15px] md:text-[20px] 2xl:text-[25px]
-       text-[#F3EBD6] flex justify-center items-center'>Hackodisha 4.0 2024. Powered by Webwiz, NIT Rourkela.</p>
+       text-[#F3EBD6] flex justify-center items-center mt-[1rem]'>Hackodisha 4.0 2024. Powered by Webwiz, NIT Rourkela.</p>
     </div>
     </>
   )

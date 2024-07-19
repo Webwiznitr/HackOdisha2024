@@ -13,7 +13,7 @@ interface SponsorProps {
 
 export default function Sponsor({ type, sponsorsList }: SponsorProps) {
     return (
-        <div className="mb-12 sm:mb-16 md:mb-24 lg:mb-32">
+        <div className="mb-12 sm:mb-16 md:mb-24 lg:mb-32 z-40  ">
             <div className="text-orange-500 text-shadow-2">
                 <span
                     className="font-dela-gothic text-2xl sm:text-3xl md:text-4xl font-normal tracking-wide text-stroke-outline uppercase"

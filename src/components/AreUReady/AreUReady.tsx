@@ -2,7 +2,7 @@ import React from 'react'
 
 const AreUReady = () => {
   return (
-    <section className='bg-[#634752] relative'>
+    <section className='bg-[#634752] relative z-40 pt-4  mb-[-0.8rem]'>
       <div className='flex flex-col items-center justify-center pt-[6rem] pb-[7rem] md:py-[6rem] lg:py-[8rem]'>
       <video
       src='https://res.cloudinary.com/dttynw5li/video/upload/v1720981434/About_us_animation-2_vml0cl.mp4' 
