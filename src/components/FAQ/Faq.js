@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import Accordion from "./Accordion";
 import "./Faq.css";
 import Image from "next/image";
-import bottom from "./bottom.svg";
-import right2 from "./right2.svg";
-import top from "./top.svg";
-import banner from "./banner.svg";
+import bottom from "./assets/bottom.svg";
+import right2 from "./assets/right2.svg";
+import top from "./assets/top.svg";
+import banner from "./assets/banner.svg";
 import { accordionData, cardboardTexture } from "./contants";
 
 export default function Faq() {
@@ -19,18 +19,30 @@ export default function Faq() {
     return (
         <div
             id="faqs"
-            className="bg-[#FFF6E0] flex justify-between z-40  mb-[-0.8rem]"
+            className="bg-[#FFF6E0] flex justify-between z-40  pb-[2rem]"
             style={{
                 backgroundImage: `url(${cardboardTexture})`,
                 backgroundSize: "cover",
             }}
         >
-            <div className="w-1/6 md:h-[82rem] sm:h-[80rem]  flex flex-col justify-between">
+            <div className="w-1/6 md:h-[82rem] sm:h-[80rem]  flex flex-col justify-between mb-10">
                 <div className="w-full flex justify-center mt-32">
-                    <Image src={top} alt="top" height={100} width={100} />
+                    <Image
+                        src={top}
+                        alt="top"
+                        height={100}
+                        width={100}
+                        className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                    />
                 </div>
-                <div className="w-full flex justify-center items-end lg:pb-20  ">
-                    <Image src={bottom} alt="bottom" height={100} width={100} />
+                <div className="w-full flex justify-center items-end">
+                    <Image
+                        src={bottom}
+                        alt="bottom"
+                        height={100}
+                        width={100}
+                        className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                    />
                 </div>
             </div>
 
@@ -43,6 +55,7 @@ export default function Faq() {
                             alt="top"
                             height={100}
                             width={500}
+                            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
                         />
                     </div>
                     <div className="w-full h-6"></div>
@@ -60,7 +73,13 @@ export default function Faq() {
                 </div>
             </div>
             <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center">
-                <Image src={right2} alt="right" height={100} width={100} />
+                <Image
+                    src={right2}
+                    alt="right"
+                    height={100}
+                    width={100}
+                    className="w-2/5 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                />
             </div>
         </div>
     );
