@@ -2,7 +2,6 @@ import { Oxanium } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,13 +21,12 @@ const config: Config = {
                 archivoBlack: "var(--archivo-black)",
                 archivo: "var(--archivo)",
                 oxanium: "var(--font-oxanium)",
-                
+                bebas: "var(--bebas-neue)",
             },
 
             colors: {
                 customPink: "#624353",
             },
-
 
             screens: {
                 xsm: "300px",
@@ -41,13 +39,13 @@ const config: Config = {
                 "custom-385": "385px",
                 "custom-355": "355px",
                 "custom-345": "345px",
-                'xl-custom': '1504px',
-                '3xl/faq': '1760px',
-                '4xl/faq': '1984px',
+                "xl-custom": "1504px",
+                "3xl/faq": "1760px",
+                "4xl/faq": "1984px",
             },
-              
+
             boxShadow: {
-            'custom-black': '7px 7px 5px 0px rgba(0, 0, 0, 1)',
+                "custom-black": "7px 7px 5px 0px rgba(0, 0, 0, 1)",
             },
         },
     },
