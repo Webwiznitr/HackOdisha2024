@@ -2,43 +2,57 @@ export const TeamMembers = [
   {
     id: 1,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/jagan.webp",
+    title: "Jagan",
     position: "Design Head",
   },
   {
     id: 2,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/prasad.webp",
+    title: "Prasad",
     position: "dev",
   },
   {
     id: 3,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/sanket.webp",
+    title: "Sanket",
     position: "dev",
   },
   {
     id: 4,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/swadhin.webp",
+    title: "Swadhin",
     position: "dev",
   },
   {
     id: 5,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/ankita1.webp",
+    title: "Ankita",
     position: "dev",
   },
   {
     id: 6,
     imgSrc:
-      "https://res.cloudinary.com/dxjrtfkbc/image/upload/v1721290752/HackOdisha/mkkiiluf2pjh9jqsvzn4.png",
-    title: "Jane Cooper",
+      "/images/ourTeam/sanjana1.webp",
+    title: "Sanjana",
+    position: "dev",
+  },
+  {
+    id: 7,
+    imgSrc:
+      "/images/ourTeam/abhishek.webp",
+    title: "Abhishek",
+    position: "dev",
+  },
+  {
+    id: 8,
+    imgSrc:
+      "/images/ourTeam/istaprasad.webp",
+    title: "Istaprasad",
     position: "dev",
   },
 ];

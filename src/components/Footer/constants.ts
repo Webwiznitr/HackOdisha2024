@@ -14,18 +14,18 @@ interface socialmedia{
 export const socialmediaicons:socialmedia[]=[
     {   id:1,
         Image:"https://res.cloudinary.com/dgtdkqfsx/image/upload/v1720945480/icon_px4xy5.png",
-        link:""  //Discord,
+        link:"https://discord.com/invite/FqQjHUgmwS"  //Discord,
     },
     {   id:2,
         Image:"https://res.cloudinary.com/dgtdkqfsx/image/upload/v1720945480/icon_1_cwikbv.png",
-        link:""  //Instagram,
+        link:"https://www.instagram.com/webwiz.nitr/"  //Instagram,
     },
     {   id:3,
         Image:'https://res.cloudinary.com/dgtdkqfsx/image/upload/v1720945480/icon_2_nqifjp.png',
-        link:"" //Xsss
+        link:"https://x.com/hackodisha" //Xsss
     },
     {   id:4,
         Image:'https://res.cloudinary.com/dgtdkqfsx/image/upload/v1721031090/icon_3_kpedqg.png',
-        link:""//Facebook
+        link:"https://www.facebook.com/webwiz.nitr/"//Facebook
     }    
 ]

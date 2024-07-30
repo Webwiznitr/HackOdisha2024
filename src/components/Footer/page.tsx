@@ -43,7 +43,9 @@ const Footer = () => {
     e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
   }}
 >
+  <a href="https://drive.google.com/file/d/1c9F970gkKEPUgSMLmk2vNNxeioF9_uTm/view?usp=sharing">
   Become a sponsor
+  </a>
 </button>
 
 
@@ -117,7 +119,7 @@ const Footer = () => {
         </span>
       </div>
     </section>
-    <div className="blackcontainer flex justify-center items-center text-center bg-black max-w-full py-[10px] px-[22px] sm:py-[1rem] sm:px-24 2xl:px-24">
+    <div className="z-50 blackcontainer flex justify-center items-center text-center bg-black max-w-full py-[10px] px-[22px] sm:py-[1rem] sm:px-24 2xl:px-24">
       <p className='font-oxanium font-semibold text-[10px] sm:text-[15px] md:text-[20px] 2xl:text-[25px]
        text-[#F3EBD6] flex justify-center items-center mt-[1rem]'>Hackodisha 4.0 2024. Powered by Webwiz, NIT Rourkela.</p>
     </div>

@@ -51,18 +51,18 @@ const Navbar: React.FC = () => {
           "bg-[#FBCB93] shadow-lg fixed z-50 sm-0 w-full flex top-0"
         }
       >
-        <div className="m-3 hidden md:flex pt-2">
+        <div className="m-3 hidden md:flex pt-2 font-bold">
           <Link href="/">
           <Image
               src="./images/HO4.svg"
               alt="logo"
-              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer"
+              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer font-bold"
               width={128}
               height={128}
             />
           </Link>
         </div>
-        <div className="mx-auto md:flex hidden justify-center min-h-fit">
+        <div className="mx-auto md:flex hidden justify-center min-h-fit font-bold">
           {NavData.map((item) => {
             return (
               <div
@@ -206,7 +206,9 @@ const Navbar: React.FC = () => {
     e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
   }}
 >
+  <a href="https://discord.com/invite/FqQjHUgmwS">
   Join Discord
+  </a>
 </button>
 
         </div>

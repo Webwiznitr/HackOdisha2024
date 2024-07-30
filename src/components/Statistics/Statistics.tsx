@@ -30,22 +30,22 @@ const Statistics = () => {
         <div className=' flex-col xl:w-[45%] sm:w-[65%] w-[88%] m-auto flex-wrap justify-center items-center '>
           <div className='flex flex-row justify-between mt-20'>
           <div className=' bg-[#E56E00] stats-box text-white md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
-            <h1 className=' font-bold text-4xl'>50+</h1>
+            <h1 className=' font-bold text-4xl'>3100+</h1>
             <p>Registrations</p>
           </div>
           <div className='bg-[#E56E00] stats-box text-white   md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem]  flex flex-col justify-center items-center'>
             <h1 className=' font-bold text-4xl'>50+</h1>
-            <p className=' '>Registrations</p>
+            <p className=' '>Communities</p>
           </div>
           </div>
           <div className='flex flex-row justify-between mt-20 mb-24'>
           <div className='bg-[#E56E00] stats-box text-white   md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
-            <h1 className=' font-bold text-4xl'>50+</h1>
-            <p>Registrations</p>
+            <h1 className=' font-bold text-4xl'>40+</h1>
+            <p>Sponsors</p>
           </div>
           <div className='bg-[#E56E00] stats-box text-white  md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
-            <h1 className=' font-bold text-4xl'>50+</h1>
-            <p>Registrations</p>
+            <h1 className=' font-bold text-4xl'>100+</h1>
+            <p>Schoolss</p>
           </div>
           </div>
         </div>
