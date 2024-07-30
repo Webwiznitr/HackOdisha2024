@@ -13,8 +13,7 @@ import Timeline from "@/components/Timeline/Timeline";
 export default function Home() {
     return (
         <main className="flex justify-center flex-col">
-            {/* Import and add your respective component here */}
-            <Navbar/>
+            <Navbar />
             <HeroSection />
             <AreUReady />
             <AboutUs />
@@ -24,7 +23,7 @@ export default function Home() {
             <Prizes />
             <Sponsors />
             <Faq />
-            <Footer/>
+            <Footer />
         </main>
     );
 }
