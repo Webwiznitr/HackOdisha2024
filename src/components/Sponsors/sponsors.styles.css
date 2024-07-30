@@ -1,3 +1,11 @@
 .text-stroke-outline {
     -webkit-text-stroke: #000 1px;
 }
+.sponsorBG {
+    opacity: 1;
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}

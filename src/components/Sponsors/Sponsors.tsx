@@ -5,19 +5,23 @@ const Sponsors = () => {
     return (
         <section
             id="sponsers"
-            className="py-20 flex flex-col items-start justify-start px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[160px] bg-[#f5ecd7] z-40  mb-[-0.8rem]"
-            style={{
-                backgroundImage: `url(${cardboardTexture})`,
-                backgroundSize: "cover",
-            }}
+            className=" bg-[#FFF6E0] z-40  mb-[-0.8rem] relative"
         >
-            {sponsors.map((sponsor, index) => (
-                <Sponsor
-                    key={index}
-                    type={sponsor.type}
-                    sponsorsList={sponsor.sponsorsList}
-                />
-            ))}
+            <div
+                className="sponsorBG"
+                style={{
+                    background: `url(${cardboardTexture})`,
+                }}
+            ></div>
+            <div className="py-20 flex flex-col items-start justify-start px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[160px]">
+                {sponsors.map((sponsor, index) => (
+                    <Sponsor
+                        key={index}
+                        type={sponsor.type}
+                        sponsorsList={sponsor.sponsorsList}
+                    />
+                ))}
+            </div>
         </section>
     );
 };

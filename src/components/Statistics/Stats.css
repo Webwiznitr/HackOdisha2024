@@ -1,17 +1,18 @@
 .stats-box {
     transform: skew(-20deg);
-    box-shadow:
-        5px 5px 0 #FFF6E0,
-        8px 8px 0 black;
+    box-shadow: 5px 5px 0 #fff6e0, 8px 8px 0 black;
 }
-
 
 .stats-box h1 p {
     transform: skew(20deg);
 }
 
-
-.Statistics {
-
-    background-image: url(./images/cardboard-texture\ 1.png);
+.stats-bg {
+    background-image: url("./images/cardboard-texture.png");
+    opacity: 1;
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
 }

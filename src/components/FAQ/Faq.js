@@ -19,12 +19,14 @@ export default function Faq() {
     return (
         <div
             id="faqs"
-            className="bg-[#FFF6E0] flex justify-between z-40  pb-[2rem]"
-            style={{
-                backgroundImage: `url(${cardboardTexture})`,
-                backgroundSize: "cover",
-            }}
+            className="bg-[#FFF6E0] relative flex justify-between z-40 "
         >
+            <div
+                className="fqs-bg"
+                style={{
+                    background: `url(${cardboardTexture})`,
+                }}
+            ></div>
             <div className="w-1/6 md:h-[82rem] sm:h-[80rem]  flex flex-col justify-between mb-10">
                 <div className="w-full flex justify-center mt-32">
                     <Image
@@ -46,9 +48,9 @@ export default function Faq() {
                 </div>
             </div>
 
-            <div className="bg-[#FFF6E0]  w-4/6 h-full flex flex-col   ">
+            <div className="  w-4/6 h-full flex flex-col   ">
                 <div className="w-full h-16"></div>
-                <div className="accordion bg-[#FFF6E0] w-full flex flex-col ">
+                <div className="accordion  w-full flex flex-col ">
                     <div className="w-full flex justify-center items-center">
                         <Image
                             src={banner}
@@ -72,7 +74,7 @@ export default function Faq() {
                     </div>
                 </div>
             </div>
-            <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center">
+            <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center  pb-[2rem]">
                 <Image
                     src={right2}
                     alt="right"

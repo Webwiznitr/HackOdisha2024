@@ -1,7 +1,5 @@
 import React from "react";
 import Event from "./Event";
-import Image from "next/image";
-import dash from "../assets/dash.svg";
 
 interface Event {
     time: string;

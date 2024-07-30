@@ -11,19 +11,9 @@ import { TeamMembers } from "./TeamData";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 const Team: React.FC = () => {
-    const isMobile = () => {
-        if (typeof window !== "undefined") {
-            return window.innerWidth <= 768;
-        }
-        return false;
-    };
-
-    const getParallaxSpeed = () => {
-        return isMobile() ? 5 : 10;
-    };
     return (
         <ParallaxProvider>
-            <div className=" bg-customPink z-40 relative  mb-[-0.8rem] w-full h-full pt-10 lg:pb-0 md:pb-0 pb-10">
+            <div className=" bg-[#634752] z-40 relative  mb-[-0.8rem] w-full h-full pt-10 lg:pb-0 md:pb-0 pb-10">
                 <div className="flex justify-items-center items-center justify-center px-5">
                     <Image
                         className="lg:w-30 lg:h-10 lg:mr-10 md:w-28 md:h-10 md:mr-8 w-12 h-5"
@@ -32,7 +22,7 @@ const Team: React.FC = () => {
                     />
                     <Parallax
                         className="absolute top-0 rotate-star-1 right-5 custom-500:right-10"
-                        speed={getParallaxSpeed()}
+                        speed={-5}
                         rotate={[0, 360]}
                     >
                         <Image
@@ -72,7 +62,7 @@ const Team: React.FC = () => {
                 </div>
                 <Parallax
                     className="absolute bottom-10 left-10"
-                    speed={getParallaxSpeed()}
+                    speed={8}
                     rotate={[0, 360]}
                 >
                     <Image

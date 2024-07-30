@@ -38,7 +38,7 @@ const Prizes = () => {
                         />
                     </div>
 
-                    <div className="box pt-20 justify-center">
+                    <div className="box pt-24 justify-center">
                         <div className="card1 h-36 w-60 bg-[#FFF6E0] mt-14 rounded-[6.54px] hover:scale-105 transition ml-20 sm:ml-56 lg:h-48 lg:w-80 lg:ml-80 lg:mt-28">
                             <div className="Frame2">
                                 <img
