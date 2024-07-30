@@ -17,12 +17,12 @@
     "react-image": "^4.1.0",
     "react-parallax": "^3.5.1",
     "react-scroll-parallax": "^3.4.5"
-
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-helmet": "^6.1.11",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8.4.39",
@@ -34,5 +34,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
-
 }

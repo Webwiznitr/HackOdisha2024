@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Dela_Gothic_One, Inter, Archivo_Black, Archivo,Oxanium } from "next/font/google"
 import "./globals.css"
-
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +43,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CLXMFQZWHF"></Script>
+     <Script id="google-analytics">
+      {` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+       gtag('config', 'G-CLXMFQZWHF'); `}
+     </Script>
+      </head>
       <body
         className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable} ${oxanium.variable}`}
       >
