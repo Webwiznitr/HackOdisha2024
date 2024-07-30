@@ -13,7 +13,7 @@ const Sponsors = () => {
                     background: `url(${cardboardTexture})`,
                 }}
             ></div>
-            <div className="py-20 flex flex-col items-start justify-start px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[160px]">
+            <div className="pt-20 flex flex-col items-start justify-start px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[160px]">
                 {sponsors.map((sponsor, index) => (
                     <Sponsor
                         key={index}

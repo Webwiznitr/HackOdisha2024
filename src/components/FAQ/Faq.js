@@ -8,6 +8,7 @@ import right2 from "./assets/right2.svg";
 import top from "./assets/top.svg";
 import banner from "./assets/banner.svg";
 import { accordionData, cardboardTexture } from "./contants";
+import Title from "../Timeline/components/Title";
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState(null);
@@ -19,7 +20,7 @@ export default function Faq() {
     return (
         <div
             id="faqs"
-            className="bg-[#FFF6E0] relative flex justify-between z-40 "
+            className="bg-[#FFF6E0] relative flex justify-between z-40 pb-20"
         >
             <div
                 className="fqs-bg"
@@ -49,16 +50,9 @@ export default function Faq() {
             </div>
 
             <div className="  w-4/6 h-full flex flex-col   ">
-                <div className="w-full h-16"></div>
                 <div className="accordion  w-full flex flex-col ">
-                    <div className="w-full flex justify-center items-center">
-                        <Image
-                            src={banner}
-                            alt="top"
-                            height={100}
-                            width={500}
-                            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-                        />
+                    <div className="w-full flex items-center justify-center">
+                        <Title title="FAQS" />
                     </div>
                     <div className="w-full h-6"></div>
                     <div className=" prob ">
@@ -74,7 +68,7 @@ export default function Faq() {
                     </div>
                 </div>
             </div>
-            <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center  pb-[2rem]">
+            <div className="w-1/6 md:h-[82rem] sm:h-[80rem] flex flex-col justify-center items-center ">
                 <Image
                     src={right2}
                     alt="right"

@@ -18,7 +18,7 @@ const AreUReady = () => {
                             width={60}
                             height={60}
                             alt="video"
-                            className="sm:w-[3rem] md:w-[5rem]"
+                            className="w-[2rem] md:w-[5rem]"
                         ></Image>
                     </Parallax>
 
@@ -48,7 +48,7 @@ const AreUReady = () => {
                             width={60}
                             height={60}
                             alt="video"
-                            className="sm:w-[3rem] md:w-[5rem]"
+                            className="w-[2rem] md:w-[5rem]"
                         ></Image>
                     </Parallax>
                 </div>
