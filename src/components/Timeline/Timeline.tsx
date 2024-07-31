@@ -9,6 +9,7 @@ import Image from "next/image";
 import decor1 from "./assets/decor1.svg";
 import decor2 from "./assets/decor2.svg";
 import decor3 from "./assets/decor3.svg";
+import { Parallax } from "react-scroll-parallax";
 
 const numbersArray = Array.from(
     { length: days.length },
@@ -54,13 +55,33 @@ const Timeline = () => {
                     id="left"
                     className="flex-col justify-between w-1/6 items-center hidden sm:flex pointer-events-none"
                 >
-                    <div id="decor1" className="w-12 md:w-24">
-                        <Image src={decor1} alt="" />
-                    </div>
+                    <Parallax
+                        className="w-12 md:w-24"
+                        speed={5}
+                        rotate={[-90, 90]}
+                    >
+                        <Image
+                            className="size-20"
+                            height={50}
+                            width={50}
+                            src={decor1}
+                            alt="up"
+                        />
+                    </Parallax>
 
-                    <div id="decor2" className="md:w-24 w-12">
-                        <Image src={decor2} alt="" />
-                    </div>
+                    <Parallax
+                        className="md:w-24 w-12"
+                        speed={8}
+                        rotate={[-90, 90]}
+                    >
+                        <Image
+                            className="size-20"
+                            height={50}
+                            width={50}
+                            src={decor2}
+                            alt="up"
+                        />
+                    </Parallax>
                 </div>
 
                 <Schedule date={days[day].date} events={days[day].events} />
@@ -69,9 +90,19 @@ const Timeline = () => {
                     id="right"
                     className="justify-center items-center w-1/6 hidden sm:flex pointer-events-none"
                 >
-                    <div id="decor3" className="md:w-16 w-12">
-                        <Image src={decor3} alt="" />
-                    </div>
+                    <Parallax
+                        className="md:w-16 w-12"
+                        speed={10}
+                        rotate={[-90, 90]}
+                    >
+                        <Image
+                            className="size-20"
+                            height={50}
+                            width={50}
+                            src={decor3}
+                            alt="up"
+                        />
+                    </Parallax>
                 </div>
             </div>
         </main>
