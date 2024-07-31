@@ -18,7 +18,7 @@ const AboutUs = () => {
     return (
         <div
             id="aboutus"
-            className="bg-[#634752] w-full min-h-[750px]  mb-[-0.8rem] z-40 flex flex-col items-center justify-center p-8 md:p-30 lg:p-40 pt-1 lg:pt-10 relative"
+            className="bg-[#634752] w-full min-h-screen  z-40 flex flex-col items-center justify-center p-8 md:p-30 lg:p-40 pt-1 lg:pt-10 relative"
         >
             <Parallax
                 className="absolute bottom-20 md:left-12 left-5 z-0 rotate-star-1"
@@ -48,57 +48,54 @@ const AboutUs = () => {
                 />
             </Parallax>
 
-            <div className="relative text-justify w-full">
-                <div className="pb-4 relative -rotate-6 w-full z-10">
-                    <div className="absolute top-3 md:-top-3 md:left-56 left-20">
-                        <Image
-                            src="/images/aboutus-crack-wall.png"
-                            alt="Crack-wall"
-                            className="w-[130px] md:w-[330px] h-auto"
-                            width={200}
-                            height={200}
-                        />
-                    </div>
-
-                    <div className="pl-5">
-                        <h4 className="text-[#FEDAC4] md:text-xl text-sm font-semibold md:px-10 md:pl-20 px-5 pb-10 relative">
-                            SO YOU MIGHT BE THINKING..
-                        </h4>
-                        <h1 className="text-[#FFFFFF] md:text-5xl text-[18px] font-bold md:px-10 px-1 pb-10 relative">
-                            What is{" "}
-                            <span className="bg-black pb-2.5 pr-1.5 shadow-lg relative">
-                                <span className="bg-[#E16C00] p-1 z-10">
-                                    {" "}
-                                    HACKODISHA?
-                                </span>
-                            </span>
+            <div className="">
+                <div className="flex flex-col items-start w-screen md:px-20 ">
+                    <div className="ml-10 md:ml-32">
+                        <h1
+                            className="font-bebas text-[#FEDAC4] text-xl md:text-2xl lg:text-3xl"
+                            style={{
+                                transform: "rotate(-3.748deg)",
+                            }}
+                        >
+                            SO YOU MIGHT BE THINKING...
                         </h1>
-                    </div>
-                </div>
 
-                <div className="px-5 md:px-16 text-justify pt-10 md:text-[20px]">
-                    <p className="text-[#E7E7E7] pb-4">
-                        HackOdisha- a thrilling{" "}
-                        <span className="text-[#E16C00]">
-                            36-hour online hackathon
-                        </span>{" "}
-                        organized by{" "}
-                        <span className="text-[#E16C00]">
-                            Webwiz, Nit Rourkela
-                        </span>
-                        — an event dedicated to fostering community
-                        collaboration. With an impressive turnout of over 1600
-                        participants across India, this hackathon promises to be
-                        a platform where innovation knows no bounds.
-                    </p>
-                    <p className="text-[#E7E7E7]">
-                        We celebrate the power of technology and the indomitable
-                        spirit of our participants. Together, we&apos;re shaping
-                        a brighter future through{" "}
-                        <span className="text-[#E16C00]">
-                            innovation and collaboration.
-                        </span>
-                    </p>
+                        <div className="flex items-center mt-2 md:mt-8 gap-5">
+                            <h1
+                                className="font-archivoBlack text-white font-[800] text-xl md:text-3xl lg:text-5xl mt-8 md:mt-12"
+                                style={{
+                                    transform: "rotate(-2.899deg)",
+                                }}
+                            >
+                                What is
+                            </h1>
+                            <div className="relative">
+                                <div
+                                    className="bg-[#E56E00] text-white font-archivoBlack font-[800] text-xl md:text-3xl lg:text-5xl px-2 py-1 mt-2"
+                                    style={{
+                                        boxShadow:
+                                            "10.513px 12.265px 0px 0px #1E1E1E",
+                                        transform: "rotate(-3.405deg)",
+                                    }}
+                                >
+                                    <h1>HACKODISHA</h1>
+                                </div>
+                                <div className="absolute inset-0 -z-10">
+                                    <Image
+                                        src="/images/aboutus-crack-wall.png"
+                                        alt="logo"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        style={{
+                                            mixBlendMode: "multiply",
+                                            transform: "rotate(0deg)",
+                                            scale: "1.5",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
