@@ -7,11 +7,19 @@ import star2 from "../Team/Team/star2.png";
 import TeamCard from "./TeamCard";
 import { TeamMembers } from "./TeamData";
 import { Parallax } from "react-scroll-parallax";
+import { cardboardTexture } from "../Sponsors/constants";
 
 const Team: React.FC = () => {
     return (
-        <div className=" bg-[#634752] z-40 relative  mb-[-0.8rem] w-full h-full pt-10 lg:pb-0 md:pb-0 pb-10">
-            <div className="flex justify-items-center items-center justify-center px-5">
+        <div className=" bg-[#604151] z-40 relative  mb-[-0.8rem] w-full h-full lg:pb-0 md:pb-0 pb-10">
+            <div className="texture mix-blend-color-burn absolute flex bg-cover ">
+                <img
+                    src={cardboardTexture}
+                    alt="re - render"
+                    className="w-screen bg-cover h-[1370px]"
+                />
+            </div>
+            <div className="flex justify-items-center items-center justify-center px-5 mt-10">
                 <Image
                     className="lg:w-30 lg:h-10 lg:mr-10 md:w-28 md:h-10 md:mr-8 w-12 h-5"
                     src={Graphic1}

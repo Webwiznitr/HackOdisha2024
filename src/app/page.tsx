@@ -20,10 +20,10 @@ export default function Home() {
                 <HeroSection />
                 <AreUReady />
                 <AboutUs />
-                <Team />
                 <Statistics />
                 <Timeline />
                 <Prizes />
+                <Team />
                 <Sponsors />
                 <Faq />
                 <Footer />
