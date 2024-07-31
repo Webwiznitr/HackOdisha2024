@@ -49,7 +49,24 @@ const config: Config = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }: { addUtilities: Function }) {
+            const newUtilities = {
+                ".text-stroke": {
+                    "-webkit-text-stroke-width": "1px",
+                    "-webkit-text-stroke-color": "#000",
+                },
+                ".text-shadow-outline": {
+                    "text-shadow": `
+                  2px 2px 0 #fbf2dc,
+                  2.7px 2.7px 0 #000 
+                `,
+                },
+            };
+
+            addUtilities(newUtilities);
+        },
+    ],
 };
 
 export default config;

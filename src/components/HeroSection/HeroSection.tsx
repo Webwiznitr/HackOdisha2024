@@ -17,7 +17,7 @@ export default function HeroSection() {
 
     return (
         <div>
-            <div className="relative h-[30rem] md:h-[456rem] 2xl:h-[50rem] bg-white overflow-hidden mb-[-0.8rem]">
+            <div className="relative h-[30rem] md:h-[43rem] 2xl:h-[50rem] bg-white overflow-hidden mb-[-0.8rem]">
                 <motion.div
                     style={{ y: y1, zIndex: 10 }}
                     className="absolute w-full h-full"
@@ -26,14 +26,14 @@ export default function HeroSection() {
                         src="/images/below.png"
                         alt="gradient"
                         layout="fill"
-                        className="object-cover z-10 object-bottom scale-125 sm:scale-1"
+                        className="object-cover z-10 object-bottom scale-125 sm:scale-100"
                     />
                 </motion.div>
                 <div
                     style={{
                         zIndex: 20,
                     }}
-                    className="fixed top-[5rem] z-20 flex justify-center items-center w-full m-auto"
+                    className="fixed top-[5rem] z-20 flex justify-center items-center w-screen"
                 >
                     <Herohack />
                 </div>

@@ -7,20 +7,15 @@ const Title = ({ title }: { title: string }) => {
     return (
         <main
             id="title"
-            className="relative flex h-8 items-center m-8 pointer-events-none my-20"
+            className="flex items-center pointer-events-none my-20"
         >
             <Image src={leftArrow} alt="" className="sm:h-6 h-4" />
 
-            <div id="title-text" className="relative">
-                <div
-                    id="title-text"
-                    className="font-black text-stroke sm:text-4xl text-3xl text-[#D03441] font-archivoBlack absolute z-5 tracking-wider"
-                >
-                    {title}
-                </div>
-                <div className="text-stroke text-transparent font-archivoBlack ml-[0.2rem] mt-[0.15rem] sm:text-4xl text-3xl tracking-wider">
-                    {title}
-                </div>
+            <div
+                id="title-text"
+                className="text-2xl custom-355:text-3xl custom-500:text-4xl md:text-5xl font-archivoBlack font-normal text-[#d03441] tracking-wider text-stroke text-shadow-outline"
+            >
+                {title}
             </div>
 
             <Image src={rightArrow} alt="" className="sm:h-6 h-4" />
