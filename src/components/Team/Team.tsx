@@ -8,6 +8,7 @@ import TeamCard from "./TeamCard";
 import { TeamMembers } from "./TeamData";
 import { Parallax } from "react-scroll-parallax";
 import { cardboardTexture } from "../Sponsors/constants";
+import Header from "../commons/Header";
 
 const Team: React.FC = () => {
     return (
@@ -20,11 +21,6 @@ const Team: React.FC = () => {
                 />
             </div>
             <div className="flex justify-items-center items-center justify-center px-5 mt-10">
-                <Image
-                    className="lg:w-30 lg:h-10 lg:mr-10 md:w-28 md:h-10 md:mr-8 w-12 h-5"
-                    src={Graphic1}
-                    alt="GRAPHIC1"
-                />
                 <Parallax
                     className="absolute top-0 rotate-star-1 right-5 custom-500:right-10"
                     speed={-5}
@@ -38,22 +34,7 @@ const Team: React.FC = () => {
                         className="scale-50 custom-500:scale-75"
                     />
                 </Parallax>
-
-                <div className="text-orange-500 text-shadow-2">
-                    <span
-                        className=" text-2xl font-dela-gothic sm:text-3xl md:text-5xl font-normal tracking-widest text-stroke-outline"
-                        style={{
-                            textShadow: "1px 2px 0px #fff",
-                        }}
-                    >
-                        OUR TEAM
-                    </span>
-                </div>
-                <Image
-                    className="lg:w-30 lg:h-10 lg:ml-10 md:w-28 md:h-10 md:ml-8 w-12 h-5"
-                    src={Graphic2}
-                    alt="GRAPHIC2"
-                />
+                <Header title="OUR TEAM" />
             </div>
             <div className="grid lg:gap-20 md:gap-16 gap-10 lg:grid-cols-3 grid-cols-2 lg:px-24 md:px-20 px-10 justify-items-center justify-center py-28 ">
                 {TeamMembers.map((TeamMember) => (

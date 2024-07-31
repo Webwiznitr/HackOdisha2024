@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./Timeline.css";
-import Title from "./components/Title";
+import Title from "../commons/Title";
 import Day from "./components/Day";
 import Schedule from "./components/Schedule";
 import days from "./constants";

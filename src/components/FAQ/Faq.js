@@ -8,7 +8,7 @@ import right2 from "./assets/right2.svg";
 import top from "./assets/top.svg";
 import { Parallax } from "react-scroll-parallax";
 import { accordionData, cardboardTexture } from "./contants";
-import Title from "../Timeline/components/Title";
+import Title from "../commons/Title";
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState(null);

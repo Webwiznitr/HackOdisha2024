@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import up from "./images/Brutalist 113.png";
 import updown from "./images/Brutalist 114.png";
-import Title from "../Timeline/components/Title";
+import Title from "../commons/Title";
 import "./stats.styles.css";
 import { Parallax } from "react-scroll-parallax";
 
@@ -24,11 +24,11 @@ const Statistics = () => {
 
                 <div>
                     <Parallax
-                        className="absolute top-[5rem] md:left-[3.5rem] left-[1rem]"
+                        className="absolute top-[10rem] custom-535:top-[5rem] md:left-[3.5rem] left-[1rem]"
                         speed={8}
                     >
                         <Image
-                            className="size-14"
+                            className="size-7 custom-535:size-10 custom-838:size-14"
                             height={50}
                             width={50}
                             src={up}
@@ -38,12 +38,12 @@ const Statistics = () => {
 
                     <div></div>
                     <Parallax
-                        className="absolute md:top-[85%] top-[120%] w-auto md:right-[2.8rem] right-[1rem]"
+                        className="absolute md:top-[85%] top-[80%] md:right-[2.8rem] right-[1rem]"
                         speed={13}
                         rotate={[-90, 90]}
                     >
                         <Image
-                            className="size-14"
+                            className="size-7 custom-535:size-10 custom-838:size-14"
                             height={50}
                             width={50}
                             src={updown}

@@ -1,6 +1,6 @@
 import React from "react";
-import leftArrow from "../assets/left-arrow.svg";
-import rightArrow from "../assets/right-arrow.svg";
+import leftArrow from "./assets/left-arrow.svg";
+import rightArrow from "./assets/right-arrow.svg";
 import Image from "next/image";
 
 const Title = ({ title }: { title: string }) => {
