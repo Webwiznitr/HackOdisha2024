@@ -36,7 +36,7 @@ export default function Faq() {
                             alt="top"
                             height={100}
                             width={100}
-                            className="size-14 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                            className="size-8 md:size-14 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
                         />
                     </Parallax>
                 </div>
@@ -47,7 +47,7 @@ export default function Faq() {
                             alt="bottom"
                             height={100}
                             width={100}
-                            className=" size-20 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                            className="size-10 md:size-20 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
                         />
                     </Parallax>
                 </div>
@@ -79,7 +79,7 @@ export default function Faq() {
                         alt="right"
                         height={100}
                         width={100}
-                        className=" h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
+                        className="size-10 md:size-20 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm xl:max-w-md"
                     />
                 </Parallax>
             </div>

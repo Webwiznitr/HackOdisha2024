@@ -22,7 +22,7 @@ export default function Accordion(props) {
                         onClick={props.toggleAccordion}
                     >
                         <div className="flex items-center w-auto">
-                            <p className="sm:text-[24px] text-base font-[600]">
+                            <p className="text-base custom-540:text-lg md:text-xl font-[600]">
                                 {props.question}
                             </p>
                         </div>
