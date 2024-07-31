@@ -57,7 +57,7 @@ const Timeline = () => {
                 >
                     <Parallax
                         className="w-12 md:w-24"
-                        speed={5}
+                        speed={10}
                         rotate={[-90, 90]}
                     >
                         <Image

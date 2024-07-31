@@ -25,7 +25,7 @@ const Statistics = () => {
                 <div>
                     <Parallax
                         className="absolute top-[5rem] md:left-[3.5rem] left-[1rem]"
-                        speed={5}
+                        speed={8}
                     >
                         <Image
                             className="size-14"
@@ -39,7 +39,7 @@ const Statistics = () => {
                     <div></div>
                     <Parallax
                         className="absolute md:top-[85%] top-[120%] w-auto md:right-[2.8rem] right-[1rem]"
-                        speed={5}
+                        speed={13}
                         rotate={[-90, 90]}
                     >
                         <Image
