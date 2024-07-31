@@ -8,6 +8,7 @@ import {
     star2,
 } from "./Data";
 import { cardboardTexture } from "../Sponsors/constants";
+import { Parallax } from "react-scroll-parallax";
 
 const Prizes = () => {
     return (
@@ -31,11 +32,13 @@ const Prizes = () => {
 
                 <div className="parentBox flex justify-center flex-row-reverse">
                     <div className="UpperRightLogo absolute ml-72 mt-24 sm:-mr-72  lg:mr-[-42rem] lg:mt-36 xl:mr-[-55rem] xl:mt-36">
-                        <img
-                            src={UpperRightLogo}
-                            alt="re-render"
-                            className="pl-4 lg:h-12"
-                        />
+                        <Parallax className="" speed={10}>
+                            <img
+                                src={UpperRightLogo}
+                                alt="re-render"
+                                className="pl-4 lg:h-12"
+                            />
+                        </Parallax>
                     </div>
 
                     <div className="box pt-24 justify-center">
@@ -185,11 +188,13 @@ const Prizes = () => {
                     </div>
 
                     <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[60rem] xl:mt-[43rem] xl:mr-[75rem]">
-                        <img
-                            src={LowerLeftLogo}
-                            alt="re-render"
-                            className=" lg:h-12"
-                        />
+                        <Parallax className="" speed={10}>
+                            <img
+                                src={LowerLeftLogo}
+                                alt="re-render"
+                                className=" lg:h-12"
+                            />
+                        </Parallax>
                     </div>
                 </div>
             </div>
