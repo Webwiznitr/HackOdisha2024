@@ -5,7 +5,7 @@ import Image from "next/image";
 const Herohack = () => {
 
   <style></style>;
-  return (
+  return (<>
     <div>
       <div className="text-[rgb(208,52,65)] h-full w-full text-[3.8rem] tracking-[0.5rem] sm:tracking-[1.2rem] lg:tracking-[0.15] sm:text-8xl md:text-9xl lg:text-[150px] xl:text-[180px] 2xl:text-[210px] lg:text-8xl font-bold leading-7 font-brandon 2xl:mt-16 xl:mt-16 lg:mt-12 md:mt-12 sm:mt-4 mt-24 shadow border-none">
         HACKODISHA
@@ -45,6 +45,8 @@ const Herohack = () => {
           <Image src={"./images/stroke.svg"} width={24} height={24} alt="stroke"/>
 
         </div>
+        </div>
+        </>
     );
 };
 
