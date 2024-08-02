@@ -1,11 +1,20 @@
-import React from 'react'
-import "./Stats.css"
-import Image from 'next/image'
-import right from "./images/right.png"
-import left from "./images/left.png"
-import up from "./images/Brutalist 113.png"
-import updown from "./images/Brutalist 114.png"
+import React from "react";
+import Image from "next/image";
+import up from "./images/Brutalist 113.png";
+import updown from "./images/Brutalist 114.png";
+import Title from "../commons/Title";
+import "./stats.styles.css";
+import { Parallax } from "react-scroll-parallax";
+
+const statsData = [
+    { id: 1, value: "50+", label: "Registrations" },
+    { id: 2, value: "50+", label: "Registrations" },
+    { id: 3, value: "50+", label: "Registrations" },
+    { id: 4, value: "50+", label: "Registrations" },
+];
+
 const Statistics = () => {
+
   return (
     <main className='Statistics bg-[#FFF6E0] z-40  mb-[-0.8rem] pt-8'>
       <div>
@@ -52,7 +61,8 @@ const Statistics = () => {
         </div>
       </div>
     </main>
-  )
+  );
 }
+
 
 export default Statistics;
