@@ -11,6 +11,8 @@ import Team from "@/components/Team/Team";
 import Timeline from "@/components/Timeline/Timeline";
 
 export default function Home() {
+
+
     return (
         <main className="flex justify-center flex-col">
             {/* Import and add your respective component here */}
