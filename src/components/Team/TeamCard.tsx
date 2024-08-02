@@ -6,7 +6,7 @@ interface TeamCardProps {
 }
 const TeamCard = ({ imgSrc, title, position }: TeamCardProps) => {
   return (
-    <div>
+    <div className="h-full flex flex-col items-centre">
       <Image
         className="lg:pt-0 lg:-mt-0 md:pt-3 -mt-8"
         width={500}

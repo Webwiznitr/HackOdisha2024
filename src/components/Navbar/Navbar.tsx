@@ -51,18 +51,18 @@ const Navbar: React.FC = () => {
           "bg-[#FBCB93] shadow-lg fixed z-50 sm-0 w-full flex top-0"
         }
       >
-        <div className="m-3 hidden md:flex pt-2">
+        <div className="m-3 hidden md:flex pt-2 font-bold">
           <Link href="/">
           <Image
               src="./images/HO4.svg"
               alt="logo"
-              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer"
+              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer font-bold"
               width={128}
               height={128}
             />
           </Link>
         </div>
-        <div className="mx-auto md:flex hidden justify-center min-h-fit">
+        <div className="mx-auto md:flex hidden justify-center min-h-fit font-bold">
           {NavData.map((item) => {
             return (
               <div
@@ -154,16 +154,30 @@ const Navbar: React.FC = () => {
                     );
                   })}
                   <div className="mt-8">
-                  <button
-                  type="button"
-                  className="rounded-[13px] text-2xl font-medium border-solid border-opacity-70 px-[20px] py-[10px] text-center me-2 mb-2 bg-[#E16C00] hover:bg-[#734c27] text-white"
-                  style={{ 
-                    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
-                    border: "3px solid rgba(0, 0, 0, 0.70)" 
-                  }}
-                >
-                  Join Discord
-                </button>
+           <button
+  type="button"
+  className="rounded-[13px] text-2xl font-medium border-solid border-opacity-70 px-[20px] py-[10px] text-center me-2 mb-2 bg-[#E16C00]  text-white"
+  style={{ 
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
+    border: "3px solid rgba(0, 0, 0, 0.70)", 
+    transition: "transform 0.1s, box-shadow 0.1s",
+  }}
+  onMouseDown={(e) => {
+    e.currentTarget.style.transform = "translateY(2px)";
+    e.currentTarget.style.boxShadow = "2px 2px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseUp={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+>
+  Join Discord
+</button>
+
                   </div>
                 </div>
               ) : null}
@@ -171,13 +185,32 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         <div className="hidden p-3 md:flex">
-          <button
-            type="button"
-            className="rounded-[13px] font-medium border-solid border-opacity-70 text-sm px-[20px] py-[10px] text-center me-2 mb-2 bg-orange-500 text-white"
-            style={{ boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75); border: 3px solid rgba(0, 0, 0, 0.70)" }}
-          >
-            Join Discord
-          </button>
+    <button
+  type="button"
+  className="rounded-[13px] font-medium border-solid border-opacity-70 text-sm px-[20px] py-[10px] text-center me-2 mb-2 bg-orange-500 text-white"
+  style={{ 
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
+    border: "3px solid rgba(0, 0, 0, 0.70)", 
+    transition: "transform 0.1s, box-shadow 0.1s",
+  }}
+  onMouseDown={(e) => {
+    e.currentTarget.style.transform = "translateY(2px)";
+    e.currentTarget.style.boxShadow = "2px 2px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseUp={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+>
+  <a href="https://discord.com/invite/FqQjHUgmwS">
+  Join Discord
+  </a>
+</button>
+
         </div>
       </nav>
     </>
