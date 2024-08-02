@@ -44,12 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-S30XDETX45"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V4WDGC1TDQ"></Script>
      <Script id="google-analytics">
       {` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-         gtag('config', 'G-S30XDETX45'); `}
+        gtag('config', 'G-V4WDGC1TDQ'); `}
      </Script>
       </head>
       <body
