@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     {
       id: 3,
       title: "Contact Us",
-      path: "#contactus",
+      path: "mailto: support@hackodisha.com",
       cName: "nav-text",
     },
     {
