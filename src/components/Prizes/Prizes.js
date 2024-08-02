@@ -8,17 +8,15 @@ import {
     star2,
 } from "./Data";
 import { cardboardTexture } from "../Sponsors/constants";
+import { Parallax } from "react-scroll-parallax";
+import Header from "../commons/Header";
 
 const Prizes = () => {
     return (
         <div className="z-40  mb-[-0.8rem]" id="prizes">
             <div className="body bg-[#604151] flex justify-center overflow-hidden">
                 <div className="logo absolute">
-                    <img
-                        src={Frame1}
-                        alt="re - render"
-                        className=" pt-10 pl-6 pr-6 pb-10 sm:h-32 lg:mt-3 lg:h-[150px]"
-                    />
+                    <Header title="Prizes" />
                 </div>
 
                 <div className="texture mix-blend-color-burn absolute flex bg-cover ">
@@ -30,15 +28,17 @@ const Prizes = () => {
                 </div>
 
                 <div className="parentBox flex justify-center flex-row-reverse">
-                    <div className="UpperRightLogo absolute ml-72 mt-24 sm:-mr-72  lg:mr-[-42rem] lg:mt-36 xl:mr-[-55rem] xl:mt-36">
-                        <img
-                            src={UpperRightLogo}
-                            alt="re-render"
-                            className="pl-4 lg:h-12"
-                        />
+                    <div className="UpperRightLogo custom-650:block hidden absolute ml-72 mt-24 sm:-mr-72  lg:mr-[-42rem] lg:mt-36 xl:mr-[-55rem] xl:mt-36">
+                        <Parallax className="" speed={10}>
+                            <img
+                                src={UpperRightLogo}
+                                alt="re-render"
+                                className="pl-4 lg:h-12"
+                            />
+                        </Parallax>
                     </div>
 
-                    <div className="box pt-20 justify-center">
+                    <div className="box pt-24 justify-center">
                         <div className="card1 h-36 w-60 bg-[#FFF6E0] mt-14 rounded-[6.54px] hover:scale-105 transition ml-20 sm:ml-56 lg:h-48 lg:w-80 lg:ml-80 lg:mt-28">
                             <div className="Frame2">
                                 <img
@@ -184,12 +184,14 @@ const Prizes = () => {
                         </div>
                     </div>
 
-                    <div className="LowerLeftLogo absolute mt-[658px] mr-72 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[60rem] xl:mt-[43rem] xl:mr-[75rem]">
-                        <img
-                            src={LowerLeftLogo}
-                            alt="re-render"
-                            className=" lg:h-12"
-                        />
+                    <div className="LowerLeftLogo custom-650:block hidden absolute mt-[658px] mr-96 sm:mt-[32rem] sm:mr-[36rem] lg:mt-[44rem] lg:mr-[60rem] xl:mt-[43rem] xl:mr-[75rem]">
+                        <Parallax className="" speed={10}>
+                            <img
+                                src={LowerLeftLogo}
+                                alt="re-render"
+                                className=" lg:h-12"
+                            />
+                        </Parallax>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,19 @@
+.stats-box {
+    @apply transform -skew-x-[20deg] shadow-lg;
+    box-shadow: 5px 5px 0 #fff6e0, 6px 6px 0 black;
+}
+
+.stats-box h1,
+.stats-box p {
+    @apply transform skew-x-[20deg];
+}
+
+.stats-bg {
+    background-image: url("./images/cardboard-texture.png");
+    opacity: 1;
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+}
