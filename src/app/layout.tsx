@@ -52,7 +52,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V4WDGC1TDQ"></Script>
+     
+        {children}
+           <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V4WDGC1TDQ"></Script>
      <Script id="google-analytics">
       {` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -63,7 +65,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable} ${oxanium.variable}`}
       >
-        {children}
       </body>
     </html>
   )
