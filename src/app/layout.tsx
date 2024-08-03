@@ -60,12 +60,12 @@ export default function RootLayout({
         className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable} ${oxanium.variable}`}
       >
         {children}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-W2SZB22VE1"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KXW0465LB2"></Script>
         <Script id="google-analytics">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-W2SZB22VE1'); `}
+            gtag('config', 'G-KXW0465LB2'); `}
         </Script>
       </body>
     </html>
