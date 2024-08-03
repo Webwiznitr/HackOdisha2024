@@ -54,7 +54,7 @@ const Footer = () => {
         <h1 className='font-archivoBlack font-normal text-[16px] sm:text-[25px] 2xl:text-[32px]'>Site map</h1>
         <ul className='mt-5'>
           {
-            ['About us','Prizes','Sponsers','FAQs'].map((item, index) => {
+            ['About us','Prizes','Sponsors','FAQs'].map((item, index) => {
                 return <li key={index} className='text-[12px] sm:text-[20px]  hover:scale-105 2xl:text-[25px] font-archivo font-semibold mb-2 flex items-center gap-3'>
                    <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
                   <Image
