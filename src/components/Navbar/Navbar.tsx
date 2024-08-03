@@ -1,29 +1,165 @@
 "use client";
-import React from "react";
-import "./Herohack.css";
+import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
-const Herohack = () => {
 
-  <style></style>;
+interface NavItem {
+  id: number;
+  title: string;
+  path: string;
+  cName: string;
+}
+
+const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const NavData: NavItem[] = [
+    {
+      id: 1,
+      title: "Home",
+      path: "/#",
+      cName: "nav-text",
+    },
+    {
+      id: 2,
+      title: "About Us",
+      path: "#aboutus",
+      cName: "nav-text",
+    },
+    {
+      id: 3,
+      title: "Contact Us",
+      path: "mailto: support@hackodisha.com",
+      cName: "nav-text",
+    },
+    {
+      id: 4,
+      title: "Events",
+      path: "#events",
+      cName: "nav-text",
+    },
+  ];
+
   return (
-    <div>
-      <div className="text-[rgb(208,52,65)] h-full w-full text-[3.8rem] tracking-[0.5rem] sm:tracking-[1.2rem] lg:tracking-[0.15] sm:text-8xl md:text-9xl lg:text-[150px] xl:text-[180px] 2xl:text-[210px] lg:text-8xl font-bold leading-7 font-brandon 2xl:mt-16 xl:mt-16 lg:mt-12 md:mt-12 sm:mt-4 mt-24 shadow border-none">
-        HACKODISHA
-      </div>
-      <div className="text-[#D03441] h-full w-full text-[0.8rem] sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold font-ARP 2xl:mt-12 xl:mt-8 lg:mt-8 md:mt-8 sm:mt-12 mt-12">
-        6th to 7th September
-      </div>
-      <div className="flex justify-center items-center 2xl:mt-20 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-12 mt-8 relative ">
-       <button
+      <nav
+        className={
+          "bg-[#FBCB93] shadow-lg fixed z-50 sm-0 w-full flex top-0"
+        }
+      >
+        <div className="m-3 hidden md:flex pt-2 font-bold">
+          <Link href="/">
+          <Image
+              src="./images/HO4.svg"
+              alt="logo"
+              className="w-2 h-1 md:w-36 md:h-10 cursor-pointer font-bold"
+              width={128}
+              height={128}
+            />
+          </Link>
+        </div>
+        <div className="mx-auto md:flex hidden justify-center min-h-fit font-bold">
+          {NavData.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className="justify-between items-center md:text-xl py-4"
+              >
+                <Link className="md:px-7 hidden md:flex mt-4 font-bold md:text-sm font-oxanium hover:text-[#D03441]" href={item.path}>
+                  {item.title}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+        <div className="w-screen md:hidden flex flex-col z-[300]">
+          <div className="flex justify-between md:hidden">
+            <Link href="/">
+            <Image
+                src="./images/HO4.svg"
+                alt="logo"
+                className=" h-8 w-12 m-2 cursor-pointer"
+                width={128}
+                height={128}
+              />
+            </Link>
+            <button
+              aria-label="Menu toggle"
+              onClick={toggleMenu}
+              className=" p-2 "
+            >
+              {/* Close Button X */}
+              <svg
+                className={`transform transition-transform ease-in-out text-[#E16C00] duration-300 relative ${isMenuOpen ? "scale-0 w-0 h-0" : ""
+                  }`}
+                  style={{ filter: "drop-shadow(0px 0.8px 0px #000)" }}
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+                />
+
+                {/* Hamburger Button  */}
+              </svg>
+              <svg
+                className={`transform transition-transform ease-in-out duration-300 text-[#E16C00] ${isMenuOpen ? "" : "scale-0 w-0 h-0"
+                  }`}
+                  style={{ filter: "drop-shadow(0px 0.8px 0px #000)" }}
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="m11.25 4.75l-6.5 6.5m0-6.5l6.5 6.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <div className="flex md:hidden w-screen absolute z-300">
+              {isMenuOpen ? (
+                <div className="flex flex-col justify-center gap-8 items-center text-center w-full h-screen bg-[#FBCB93] text-black hover:text-[#D03441] font-bold">
+                  {NavData.map((item, index) => {
+                    return (
+                      <div
+                        key={item.id}
+                        className={`justify-between cursor-pointer items-center py-4 transform transition-transform ease-in-out`}
+                      >
+                        <Link
+                          className=" text-black font-bold text-2xl"
+                          onClick={toggleMenu}
+                          href={item.path}
+                        >
+                          {item.title}
+                        </Link>
+                      </div>
+                    );
+                  })}
+                  <div className="mt-8">
+           <button
   type="button"
-  className="md:rounded-[18px] sm:rounded-[13px] rounded-[10px] text-xl sm:text-3xl md:text-3xl 2xl:text-5xl xl:text-4xl font-medium border-solid border-opacity-70 md:px-[20px] md:py-[10px] lg:px-[30px] lg:py-[15px] py-[5px] px-[10px] text-center me-2 mb-2 bg-[#E16C00] text-white font-oxanium"
-  style={{
-    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)",
-    border: "3px solid rgba(0, 0, 0, 0.70)",
+  className="rounded-[13px] text-2xl font-medium border-solid border-opacity-70 px-[20px] py-[10px] text-center me-2 mb-2 bg-[#E16C00]  text-white"
+  style={{ 
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
+    border: "3px solid rgba(0, 0, 0, 0.70)", 
     transition: "transform 0.1s, box-shadow 0.1s",
-  }}
-  onClick={() => {
-    alert("Apply on Devfolio");
   }}
   onMouseDown={(e) => {
     e.currentTarget.style.transform = "translateY(2px)";
@@ -38,16 +174,45 @@ const Herohack = () => {
     e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
   }}
 >
-  Apply on Devfolio
+  Join Discord
 </button>
 
-        <div className=" top-[10%] left-[71%] sm:top-[10%] sm:left-[70%] md:top-[10%] md:left-[67.5%] lg:top-[10%] lg:left-[67%] xl:top-[11%] xl:left-[68%] 2xl:top-[13%] 2xl:left-[71%] absolute">
-          <Image src={"./images/stroke.svg"} width={24} height={24} alt="stroke"/>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          </div>
+        </div>
+        <div className="hidden p-3 md:flex">
+    <button
+  type="button"
+  className="rounded-[13px] font-medium border-solid border-opacity-70 text-sm px-[20px] py-[10px] text-center me-2 mb-2 bg-orange-500 text-white"
+  style={{ 
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
+    border: "3px solid rgba(0, 0, 0, 0.70)", 
+    transition: "transform 0.1s, box-shadow 0.1s",
+  }}
+  onMouseDown={(e) => {
+    e.currentTarget.style.transform = "translateY(2px)";
+    e.currentTarget.style.boxShadow = "2px 2px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseUp={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
+  }}
+>
+  <a href="https://discord.com/invite/FqQjHUgmwS">
+  Join Discord
+  </a>
+</button>
 
         </div>
-        </div>
-        </div>
-    );
+      </nav>
+  );
 };
 
-export default Herohack;
+export default Navbar;

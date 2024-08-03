@@ -39,8 +39,9 @@ export default function HeroSection() {
                 </div>
                 <div className="bg-[#DFAA7A] absolute w-full bottom-0 h-52"></div>
                 <motion.div
-                    style={{ y: y2, zIndex: 30 }}
+                    style={{ y: y2, zIndex: 30 ,pointerEvents: "none"}}
                     className="absolute w-full bottom-0"
+                  
                 >
                     <Image
                         src={"/images/Top.svg"}

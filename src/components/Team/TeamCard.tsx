@@ -8,7 +8,7 @@ const TeamCard = ({ imgSrc, title, position }: TeamCardProps) => {
   return (
     <div className="h-full flex flex-col items-centre">
       <Image
-        className="lg:pt-0 lg:-mt-0 md:pt-3 -mt-8"
+        className="lg:pt-0 lg:-mt-0 md:pt-3 -mt-8 h-full"
         width={500}
         height={500}
         src={imgSrc}

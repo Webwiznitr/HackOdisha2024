@@ -24,7 +24,7 @@ export default function Home() {
                 <Timeline />
                 <Prizes />
                 <Team />
-                <Sponsors />
+                {/* <Sponsors /> */}
                 <Faq />
                 <Footer />
             </ParallaxProvider>
