@@ -56,7 +56,7 @@ const Statistics = () => {
           </div>
           <div className='bg-[#E56E00] stats-box text-white  md:w-[14rem] md:h-[12rem] sm:w-[10rem] sm:h-[8rem] w-[8rem] h-[6rem] flex flex-col justify-center items-center'>
             <h1 className=' font-bold text-4xl'>100+</h1>
-            <p>Schoolss</p>
+            <p>Schools</p>
           </div>
           </div>
         </div>
