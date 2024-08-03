@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Dela_Gothic_One, Inter, Archivo_Black, Archivo,Oxanium, Bebas_Neue } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"
+import Link from "next/link"
 
 
 const inter = Inter({
@@ -42,6 +43,7 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
     title: "HackOdisha 4.0",
     description: "hackodisha",
+   
 };
 
 export default function RootLayout({
@@ -51,16 +53,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico"/>
+      </head>
       <body
         className={`${inter.className} ${archivo_black.variable} ${archivo.variable} ${delaGothicOne.variable} ${oxanium.variable}`}
       >
         {children}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V4WDGC1TDQ"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-W2SZB22VE1"></Script>
         <Script id="google-analytics">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-V4WDGC1TDQ'); `}
+            gtag('config', 'G-W2SZB22VE1'); `}
         </Script>
       </body>
     </html>

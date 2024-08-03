@@ -10,7 +10,7 @@ const Herohack = () => {
         HACKODISHA
       </div>
       <div className="text-[#D03441] h-full w-full text-[0.8rem] sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold font-ARP 2xl:mt-12 xl:mt-8 lg:mt-8 md:mt-8 sm:mt-12 mt-12">
-       Comming soon...
+       Coming soon...
       </div>
       <div className="flex justify-center items-center 2xl:mt-20 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-12 mt-8 relative ">
         <button
@@ -22,7 +22,7 @@ const Herohack = () => {
             transition: "transform 0.1s, box-shadow 0.1s",
           }}
           onClick={() => {
-            alert("Regestration will start soon ⌛, stay tuned.");
+            alert("Registration will start soon ⌛, stay tuned.");
           }}
           onMouseDown={(e) => {
             e.currentTarget.style.transform = "translateY(2px)";
