@@ -43,14 +43,14 @@ const Herohack = () => {
           Apply on HackQuest
         </button>
 
-{/*         <div className=" top-[10%] left-[71%] sm:top-[10%] sm:left-[70%] md:top-[10%] md:left-[67.5%] lg:top-[10%] lg:left-[67%] xl:top-[11%] xl:left-[68%] 2xl:top-[13%] 2xl:left-[71%] absolute">
+       <div className=" top-[10%] right-[15%] sm:top-[10%] sm:right-[16%] md:top-[10%] md:right-[25%] lg:top-[10%] lg:right-[26%] xl:top-[11%] xl:right-[26%] 2xl:top-[13%] 2xl:right-[22%] absolute">
           <Image
             src={"./images/stroke.svg"}
             width={24}
             height={24}
             alt="stroke"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );
