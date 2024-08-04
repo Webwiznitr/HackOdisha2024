@@ -40,7 +40,7 @@ const Herohack = () => {
               "4px 4px 0px 0px rgba(0, 0, 0, 0.75)";
           }}
         >
-          Apply on Devfolio
+          Apply on HackQuest
         </button>
 
         <div className=" top-[10%] left-[71%] sm:top-[10%] sm:left-[70%] md:top-[10%] md:left-[67.5%] lg:top-[10%] lg:left-[67%] xl:top-[11%] xl:left-[68%] 2xl:top-[13%] 2xl:left-[71%] absolute">
