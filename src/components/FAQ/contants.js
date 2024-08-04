@@ -36,14 +36,5 @@ export const accordionData = [
         question: "Is physical presence required, or can we hack remotely?",
         answer: "Nah, no need for pants, go remote! 🏠😄",
     },
-    {
-        serial: "08",
-        question: "What is a hackathon?",
-        answer: "A hackathon is an invention marathon where you can work with people around the globe to build a project related to technology! It isn't about hacking into a system, it's instead about hacking something together and learning a great deal in the process.",
-    },
-    {
-        serial: "09",
-        question: "What is a hackathon?",
-        answer: "A hackathon is an invention marathon where you can work with people around the globe to build a project related to technology! It isn't about hacking into a system, it's instead about hacking something together and learning a great deal in the process.",
-    },
+   
 ];
