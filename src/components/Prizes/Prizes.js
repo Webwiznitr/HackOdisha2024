@@ -49,7 +49,7 @@ const Prizes = () => {
                                 <div className="content absolute z-50 font-dela-gothic font-normal text-white text-[11px] ml-[-21px] lg:text-[14px] lg:ml-[-25px]">
                                     Cash Prize <br />
                                     <div className="content2 absolute z-50 font-dela-gothic font-normal text-[#FFC900] text-[16px] ml-[-21px] pl-[38px] text-stroke-outline lg:text-[22px] lg:mr-[-34px]">
-                                        XXk
+                                        20k
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +70,7 @@ const Prizes = () => {
                                     Goodies and T-Shirts <br />
                                 </div>
                                 <div className="MainContent3 font-dela-gothic text-[#F98C3A] text-sm pt-1 flex lg:text-lg lg:ml-4">
-                                    Voucher worth
-                                    <div className="cash font-dela-gothic text-[#FFD600] text-sm lg:text-lg">
-                                        XXk
-                                    </div>
+                                    Voucher & More
                                 </div>
                                 <div className="star2 self-end mr-7">
                                     <img
@@ -97,7 +94,7 @@ const Prizes = () => {
                                     <div className="content absolute z-50 font-dela-gothic font-normal text-white text-[11px] ml-[-21px] lg:text-[14px] lg:ml-[-25px]">
                                         Cash Prize <br />
                                         <div className="content2 absolute z-50 font-dela-gothic font-normal text-[#FFC900] text-[16px] ml-[-21px] pl-[38px] text-stroke-outline lg:text-[22px] lg:mr-[-34px]">
-                                            XXk
+                                            15k
                                         </div>
                                     </div>
                                 </div>
@@ -119,10 +116,7 @@ const Prizes = () => {
                                         Goodies and T-Shirts <br />
                                     </div>
                                     <div className="MainContent3 font-dela-gothic text-[#F98C3A] text-sm pt-1 flex lg:text-lg lg:ml-4">
-                                        Voucher worth
-                                        <div className="cash font-dela-gothic text-[#FFD600] text-sm lg:text-lg">
-                                            XXk
-                                        </div>
+                                        Voucher & More
                                     </div>
                                     <div className="star2 self-end mr-7">
                                         <img
@@ -145,7 +139,7 @@ const Prizes = () => {
                                     <div className="content absolute z-50 font-dela-gothic font-normal text-white text-[11px] ml-[-21px] lg:text-[14px] lg:ml-[-25px]">
                                         Cash Prize <br />
                                         <div className="content2 absolute z-50 font-dela-gothic font-normal text-[#FFC900] text-[16px] ml-[-21px] pl-[38px] text-stroke-outline lg:text-[22px] lg:mr-[-34px]">
-                                        XXk
+                                            10k
                                         </div>
                                     </div>
                                 </div>
@@ -166,10 +160,7 @@ const Prizes = () => {
                                         Goodies and T-Shirts <br />
                                     </div>
                                     <div className="MainContent3 font-dela-gothic text-[#F98C3A] text-sm pt-1 flex lg:text-lg lg:ml-4">
-                                        Voucher worth
-                                        <div className="cash font-dela-gothic text-[#FFD600] text-sm lg:text-lg">
-                                            XXk
-                                        </div>
+                                        Voucher & More
                                     </div>
                                     <div className="star2 self-end mr-7">
                                         <img

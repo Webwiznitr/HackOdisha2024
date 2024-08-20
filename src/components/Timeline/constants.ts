@@ -10,7 +10,7 @@ interface Day {
 
 //day 1 events
 const day1: Day = {
-  date: "xx xx, 2024",
+  date: "19 Oct, 2024",
   events: [
     {
       time: "7:30 AM",
@@ -53,7 +53,7 @@ const day1: Day = {
 
 // day2 events
 const day2 = {
-  date: "xx xx, 2024",
+  date: "20 Oct, 2024",
   events: [
     {
       time: "12:00 AM",
