@@ -10,7 +10,7 @@ const Herohack = () => {
         HACKODISHA
       </div>
       <div className="text-[#D03441] h-full w-full text-[0.8rem] sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold font-ARP 2xl:mt-12 xl:mt-8 lg:mt-8 md:mt-8 sm:mt-12 mt-12">
-       Coming soon...
+        19th - 20th Oct
       </div>
       <div className="flex justify-center items-center 2xl:mt-20 xl:mt-12 lg:mt-10 md:mt-8 sm:mt-12 mt-8 relative ">
         <button
@@ -22,7 +22,7 @@ const Herohack = () => {
             transition: "transform 0.1s, box-shadow 0.1s",
           }}
           onClick={() => {
-            alert("Registration will start soon ⌛, stay tuned.");
+            location.href = "https://www.hackquest.io/en/hackathon/explore/HackOdisha-40";
           }}
           onMouseDown={(e) => {
             e.currentTarget.style.transform = "translateY(2px)";
@@ -43,7 +43,7 @@ const Herohack = () => {
           Apply on HackQuest
         </button>
 
-       <div className=" top-[10%] right-[15%] sm:top-[10%] sm:right-[16%] md:top-[10%] md:right-[25%] lg:top-[10%] lg:right-[26%] xl:top-[11%] xl:right-[26%] 2xl:top-[13%] 2xl:right-[22%] absolute">
+        <div className=" top-[10%] right-[15%] sm:top-[10%] sm:right-[16%] md:top-[10%] md:right-[25%] lg:top-[10%] lg:right-[26%] xl:top-[11%] xl:right-[26%] 2xl:top-[13%] 2xl:right-[22%] absolute">
           <Image
             src={"./images/stroke.svg"}
             width={24}
