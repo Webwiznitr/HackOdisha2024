@@ -53,28 +53,28 @@ export const TeamMembers = [
     imgSrc:
       "/images/ourTeam/ankita1.webp",
     title: "Ankita",
-    position: "Sponsership",
+    position: "Sponsorship",
   },
   {
     id: 9,
     imgSrc:
       "/images/ourTeam/sanjana1.webp",
     title: "Sanjana",
-    position: "Sponsership",
+    position: "Sponsorship",
   },
   {
     id: 10,
     imgSrc:
       "/images/ourTeam/swasti.webp",
     title: "Swasti",
-    position: "Manegement",
+    position: "Management",
   },
   {
     id: 11,
     imgSrc:
       "/images/ourTeam/abinash.webp",
     title: "Abinash",
-    position: "Manegement",
+    position: "Management",
   },
   
   

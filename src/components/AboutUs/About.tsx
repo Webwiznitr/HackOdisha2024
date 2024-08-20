@@ -123,7 +123,7 @@ const AboutUs = () => {
                         >
                             We celebrate the power of technology and the
                             indomitable spirit of our participants. Together,
-                            we're shaping a brighter future through innovation
+                            we&apos;re shaping a brighter future through innovation
                             and collaboration.
                         </p>
                     </div>
