@@ -14,7 +14,7 @@ export const TwitterShareButton = () => {
         window.open(twitterUrl, "_blank")
     }
 
-    return <button onClick={handleTwitterShareClick}>Share on Twitter</button>
+    return <button onClick={handleTwitterShareClick}>Share on X</button>
 }
 
 export const LinkedInShareButton = ({url}) => {

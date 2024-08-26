@@ -1,6 +1,6 @@
 "use client"
 import * as THREE from "three"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import { Canvas, extend, useThree, useFrame } from "@react-three/fiber"
 import {
     useGLTF,
@@ -21,6 +21,7 @@ import { MeshLineGeometry, MeshLineMaterial } from "meshline"
 import { useControls } from "leva"
 import { useSearchParams } from "next/navigation"
 import { LinkedInShareButton, TwitterShareButton } from "./CopyButton"
+import axios from "axios"
 
 extend({ MeshLineGeometry, MeshLineMaterial })
 useGLTF.preload(
@@ -30,25 +31,37 @@ useTexture.preload(
     "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg"
 )
 
-export default function App() {
-    const searchParams = useSearchParams()
-    const user = searchParams.get("username")
-    localStorage.setItem("userName", user)
-    const { debug } = useControls({ debug: false })
-    const [userName, setUserName] = useState(() => {
-        return localStorage.getItem("userName") || ""
-    })
+export default function Page({params}) {
+    const uid = params.id
+    console.log(uid);
+    localStorage.setItem("uid", uid)
+    const [userName, setUserName] = useState("")
+
+    const fetchUser = async () => {
+        try {
+            console.log(process.env.NEXT_PUBLIC_USER_API_URL)
+            const res = await axios.post(process.env.NEXT_PUBLIC_USER_API_URL, {
+                id: uid,
+            })
+            const userData = res.data.user
+            setUserName(
+                userData.firstName.trim() + " " + userData.lastName.trim()
+            )
+            console.log(res)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useLayoutEffect(() => {
+        fetchUser()
+    }, [])
 
     return (
         <div className="relative w-screen h-screen">
             <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
                 <ambientLight intensity={Math.PI} />
-                <Physics
-                    debug={debug}
-                    interpolate
-                    gravity={[0, -40, 0]}
-                    timeStep={1 / 60}
-                >
+                <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
                     <Band name={userName || "HO4 HACKER"} />
                 </Physics>
                 <Environment background blur={0.75}>
