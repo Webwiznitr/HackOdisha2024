@@ -31,15 +31,13 @@ useTexture.preload(
     "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg"
 )
 
-export default function Page({params}) {
+export default function Page({ params }) {
     const uid = params.id
-    console.log(uid);
     localStorage.setItem("uid", uid)
     const [userName, setUserName] = useState("")
 
     const fetchUser = async () => {
         try {
-            console.log(process.env.NEXT_PUBLIC_USER_API_URL)
             const res = await axios.post(process.env.NEXT_PUBLIC_USER_API_URL, {
                 id: uid,
             })
@@ -47,7 +45,6 @@ export default function Page({params}) {
             setUserName(
                 userData.firstName.trim() + " " + userData.lastName.trim()
             )
-            console.log(res)
         } catch (error) {
             console.log(error)
         }
