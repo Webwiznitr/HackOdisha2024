@@ -1,22 +1,52 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import axios from "axios";
 
 function Page() {
     const [email, setEmail] = useState("");
+    const [loading, setLoading] = useState(false);
     const router = useRouter();
 
-    const handleClick = () => {
+    const handleClick = async () => {
         if (!email) {
             alert("Please enter a valid email address");
             return;
         }
-        router.push(`/id/${email}`);
+        try {
+            const uid = await fetchUser();
+            if (uid) {
+                router.push(`/id/${uid}`);
+            } else {
+                alert("User not found");
+            }
+        } catch {
+            alert("User not found");
+        }
+    };
+
+    const fetchUser = async () => {
+        setLoading(true);
+        try {
+            console.log("hooo");
+            const res = await axios.post(
+                process.env.NEXT_PUBLIC_API_URL + "/user",
+                {
+                    email: email,
+                }
+            );
+            const userData = res.data.user;
+            return userData._id;
+        } catch (error) {
+            console.log(error);
+            return null;
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
         <div className="relative flex flex-col items-center justify-center min-h-screen bg-[#634752] px-4">
-            {/* Back Button */}
             <button
                 onClick={() => router.back()}
                 className="absolute top-4 left-4 p-2 text-[#fff6e0] border-[1px] border-[#fff6e0] rounded hover:bg-[#fff6e0] hover:text-[#634752] transition-colors duration-300"
@@ -44,8 +74,16 @@ function Page() {
                 It may take up to 24 hours (at max) to show new registrations.
                 Please be patient.
             </div>
+
+            {loading && (
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+                    <div className="p-4 bg-[#fff6e0] text-[#634752] rounded">
+                        Loading...
+                    </div>
+                </div>
+            )}
         </div>
-    )
+    );
 }
 
 export default Page;
