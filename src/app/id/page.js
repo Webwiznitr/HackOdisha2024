@@ -15,7 +15,7 @@ function Page() {
     };
 
     return (
-        <div className="relative grid place-items-center min-h-screen bg-[#634752] px-4">
+        <div className="relative flex flex-col items-center justify-center min-h-screen bg-[#634752] px-4">
             {/* Back Button */}
             <button
                 onClick={() => router.back()}
@@ -27,7 +27,7 @@ function Page() {
             <div className="flex custom-460:flex-row flex-col custom-460:gap-0 gap-2 space-x-2 mb-6">
                 <input
                     type="text"
-                    placeholder="Enter referral code"
+                    placeholder="Enter your email"
                     className="custom-460:w-64 p-2 border border-[#fff6e0] rounded bg-[#fff6e0] text-[#634752] focus:outline-none focus:ring-2 focus:ring-[#e56e00]"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -39,8 +39,13 @@ function Page() {
                     Get My ID Card
                 </button>
             </div>
+
+            <div className="text-[#fff6e0] mb-6 text-center">
+                It may take up to 24 hours (at max) to show new registrations.
+                Please be patient.
+            </div>
         </div>
-    );
+    )
 }
 
 export default Page;
