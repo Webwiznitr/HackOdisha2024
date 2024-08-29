@@ -20,7 +20,6 @@ import {
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 import { LinkedInShareButton, TwitterShareButton } from "./CopyButton";
 import axios from "axios";
-import { useRouter } from "next/navigation";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload(
