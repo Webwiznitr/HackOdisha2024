@@ -40,6 +40,7 @@ export default function Page({ params }) {
     }
 
     const [userName, setUserName] = useState("");
+    const [noUser, setNoUser] = useState(true);
     const [selfReferral, setSelfReferral] = useState("");
 
     const fetchUser = async () => {
@@ -88,7 +89,7 @@ export default function Page({ params }) {
             </div>
         </div>
     ) : (
-        <div className="relative w-screen h-screen">
+        <div className="relative w-screen h-screen bg-black">
             <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
                 <ambientLight intensity={Math.PI} />
                 <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
