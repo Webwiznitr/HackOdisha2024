@@ -12,7 +12,6 @@ function Page() {
     const handleClick = async () => {
         setLoading(true);
         try {
-            console.log(referralCode);
             const response = await axios.post(
                 `${process.env.NEXT_PUBLIC_API_URL}/user/getUserReferral`,
                 { referralCode }
@@ -69,7 +68,7 @@ function Page() {
                                     className="p-3 bg-[#e56e00] rounded"
                                 >
                                     <p className="text-[#fff6e0]">
-                                        {referral.firstName} {referral.lastName}
+                                        {referral.firstName}
                                     </p>
                                 </li>
                             ))}

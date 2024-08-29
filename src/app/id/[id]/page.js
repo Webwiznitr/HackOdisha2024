@@ -31,12 +31,16 @@ useTexture.preload(
 );
 
 export default function Page({ params }) {
-    const router = useRouter();
-    const uid = params.id;
-    const [noUser, setNoUser] = useState(true);
+    const uid = params.id
+    const ISSERVER = typeof window === "undefined"
 
-    localStorage.setItem("uid", uid);
-    const [userName, setUserName] = useState("");
+    if (!ISSERVER) {
+        // Access localStorage
+        localStorage?.setItem("uid", uid)
+    }
+
+    const [userName, setUserName] = useState("")
+    const [selfReferral,setSelfReferral] = useState("");
 
     const fetchUser = async () => {
         try {
@@ -57,7 +61,8 @@ export default function Page({ params }) {
             }
             setUserName(
                 userData.firstName.trim() + " " + userData.lastName.trim()
-            );
+            )
+            setSelfReferral(userData.selfReferral);
         } catch (error) {
             console.log(error);
         }
@@ -127,10 +132,10 @@ export default function Page({ params }) {
                 </Environment>
             </Canvas>
             <div className="absolute bottom-12 w-screen justify-center flex gap-12">
-                <div className="bg-black rounded-full h-12 w-40 text-white grid place-items-center border-2 border-white">
-                    <TwitterShareButton />
+                <div className="share-btn">
+                    <TwitterShareButton referral={selfReferral}/>
                 </div>
-                <div className="bg-blue-800 rounded-full h-12 w-40 grid place-items-center border-2 border-white text-white">
+                <div className="share-btn">
                     <LinkedInShareButton />
                 </div>
             </div>
@@ -161,10 +166,10 @@ function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
                 new THREE.Vector3(),
                 new THREE.Vector3(),
             ])
-    );
-    const [dragged, drag] = useState(false);
-    const [hovered, hover] = useState(false);
-    const customCardTexture = useTexture("/images/ho4-4.svg");
+    )
+    const [dragged, drag] = useState(false)
+    const [hovered, hover] = useState(false)
+    const customCardTexture = useTexture("/images/ho4_3.svg")
 
     useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore
     useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore

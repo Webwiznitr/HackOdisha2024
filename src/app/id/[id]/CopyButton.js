@@ -1,32 +1,57 @@
 import React from "react"
+import { TbBrandX } from "react-icons/tb"
+import { PiLinkedinLogoFill } from "react-icons/pi"
 
-export const TwitterShareButton = () => {
-    const textToShare = "Check out this awesome content!" // The text you want to share
-    const urlToShare = "https://example.com" // The URL you want to share (optional)
-    const hashtags = "Example,React" // Comma-separated hashtags (optional)
+export const TwitterShareButton = ({referral}) => {
+    const textToShare = `🚀 Thrilled to join Hackodisha 4.0 by Webwiz NIT Rourkela! 💻🔥 Check out my ID card and join the hackathon using my referral code ${referral} for rewards!`
+    const ISSERVER = typeof window === "undefined"
+    let urlToShare = "";
+
+    if (!ISSERVER) {
+         urlToShare = window.location.href
+    }
+
+    const hashtags =
+        "Hackodisha4,WebwizNITRKL,Hackathon2024,DevelopersLife,InnovationChallenge,WomenInTech"
 
     const handleTwitterShareClick = () => {
         const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
             textToShare
-        )}&url=${encodeURIComponent(urlToShare)}&hashtags=${encodeURIComponent(
-            hashtags
-        )}`
+        )}%0A%0A&url=${encodeURIComponent(
+            urlToShare
+        )}%0A%0A&hashtags=${encodeURIComponent(hashtags)}`
         window.open(twitterUrl, "_blank")
     }
 
-    return <button onClick={handleTwitterShareClick}>Share on X</button>
+    return (
+        <button onClick={handleTwitterShareClick}>
+            Share on <TbBrandX className="inline" />
+        </button>
+    )
 }
 
-export const LinkedInShareButton = ({url}) => {
+export const LinkedInShareButton = () => {
+    const title = "Join Hackodisha 4.0 by Webwiz NIT Rourkela!"
+    const summary = `🚀 I'm excited to be part of Hackodisha 4.0! Check out my ID card and join the hackathon for an amazing experience!`
+    const ISSERVER = typeof window === "undefined"
+    let urlToShare = ""
+
+    if (!ISSERVER) {
+        urlToShare = window.location.href
+    }
 
     const handleLinkedInShareClick = () => {
-        const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}}`;
-        window.open(linkedinUrl, '_blank');
-    };
+        const linkedinUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+            urlToShare
+        )}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent(
+            summary
+        )}`
+        window.open(linkedinUrl, "_blank")
+    }
 
     return (
         <button onClick={handleLinkedInShareClick}>
-            Share on LinkedIn
+            Share on <PiLinkedinLogoFill className="inline h-6 w-6" />
         </button>
-    );
-};
+    )
+}
