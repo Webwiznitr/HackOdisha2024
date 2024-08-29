@@ -40,6 +40,7 @@ export default function Page({ params }) {
     }
 
     const [userName, setUserName] = useState("")
+    const [noUser,setNoUser] = useState(true);
     const [selfReferral,setSelfReferral] = useState("");
 
     const fetchUser = async () => {
