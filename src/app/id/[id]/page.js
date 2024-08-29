@@ -40,12 +40,15 @@ export default function Page({ params }) {
 
     const fetchUser = async () => {
         try {
+            console.log(uid);
+
+            const idIsMail = uid.includes("%40");
             const decodedId = decodeURIComponent(uid);
             const res = await axios.post(
                 process.env.NEXT_PUBLIC_API_URL + "/user",
                 {
-                    id: uid,
-                    email: decodedId,
+                    id: idIsMail ? null : uid,
+                    email: idIsMail ? decodedId : null,
                 }
             );
             const userData = res.data.user;
