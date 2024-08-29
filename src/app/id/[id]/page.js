@@ -31,7 +31,6 @@ useTexture.preload(
 );
 
 export default function Page({ params }) {
-<<<<<<< HEAD
     const uid = params.id
     const ISSERVER = typeof window === "undefined"
 
@@ -42,14 +41,6 @@ export default function Page({ params }) {
 
     const [userName, setUserName] = useState("")
     const [selfReferral,setSelfReferral] = useState("");
-=======
-    const router = useRouter();
-    const uid = params.id;
-    const [noUser, setNoUser] = useState(true);
-
-    localStorage.setItem("uid", uid);
-    const [userName, setUserName] = useState("");
->>>>>>> 101cf344b8325f3fac66a91f31165f66599fdebb
 
     const fetchUser = async () => {
         try {
@@ -70,12 +61,8 @@ export default function Page({ params }) {
             }
             setUserName(
                 userData.firstName.trim() + " " + userData.lastName.trim()
-<<<<<<< HEAD
             )
             setSelfReferral(userData.selfReferral);
-=======
-            );
->>>>>>> 101cf344b8325f3fac66a91f31165f66599fdebb
         } catch (error) {
             console.log(error);
         }
@@ -85,10 +72,6 @@ export default function Page({ params }) {
         fetchUser();
     }, []);
 
-<<<<<<< HEAD
-    return (
-        <div className="relative w-screen h-screen bg-black">
-=======
     return noUser ? (
         <div className="flex flex-col items-center justify-center min-h-screen bg-[#634752] p-4">
             <h1 className="text-[#fff6e0] text-2xl font-bold">
@@ -111,7 +94,6 @@ export default function Page({ params }) {
         </div>
     ) : (
         <div className="relative w-screen h-screen">
->>>>>>> 101cf344b8325f3fac66a91f31165f66599fdebb
             <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
                 <ambientLight intensity={Math.PI} />
                 <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
@@ -184,17 +166,10 @@ function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
                 new THREE.Vector3(),
                 new THREE.Vector3(),
             ])
-<<<<<<< HEAD
     )
     const [dragged, drag] = useState(false)
     const [hovered, hover] = useState(false)
     const customCardTexture = useTexture("/images/ho4_3.svg")
-=======
-    );
-    const [dragged, drag] = useState(false);
-    const [hovered, hover] = useState(false);
-    const customCardTexture = useTexture("/images/ho4-4.svg");
->>>>>>> 101cf344b8325f3fac66a91f31165f66599fdebb
 
     useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore
     useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore
