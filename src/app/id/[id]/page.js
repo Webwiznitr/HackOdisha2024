@@ -20,6 +20,7 @@ import {
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 import { LinkedInShareButton, TwitterShareButton } from "./CopyButton";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload(
@@ -30,19 +31,30 @@ useTexture.preload(
 );
 
 export default function Page({ params }) {
+    const router = useRouter();
     const uid = params.id;
+    const [noUser, setNoUser] = useState(true);
 
     localStorage.setItem("uid", uid);
     const [userName, setUserName] = useState("");
 
     const fetchUser = async () => {
         try {
+            console.log(uid);
+
+            const idIsMail = uid.includes("%40");
             const decodedId = decodeURIComponent(uid);
-            const res = await axios.post(process.env.NEXT_PUBLIC_USER_API_URL, {
-                id: uid,
-                email: decodedId,
-            });
+            const res = await axios.post(
+                process.env.NEXT_PUBLIC_API_URL + "/user",
+                {
+                    id: idIsMail ? null : uid,
+                    email: idIsMail ? decodedId : null,
+                }
+            );
             const userData = res.data.user;
+            if (userData) {
+                setNoUser(false);
+            }
             setUserName(
                 userData.firstName.trim() + " " + userData.lastName.trim()
             );
@@ -55,7 +67,27 @@ export default function Page({ params }) {
         fetchUser();
     }, []);
 
-    return (
+    return noUser ? (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-[#634752] p-4">
+            <h1 className="text-[#fff6e0] text-2xl font-bold">
+                It seems like you are not registered.
+            </h1>
+            <div className="flex gap-6 mt-8">
+                <a
+                    href="https://www.hackquest.io/en/hackathon/explore/HackOdisha-40"
+                    className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2"
+                >
+                    Register
+                </a>
+                <button
+                    onClick={() => router.back()}
+                    className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2 "
+                >
+                    Back
+                </button>
+            </div>
+        </div>
+    ) : (
         <div className="relative w-screen h-screen">
             <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
                 <ambientLight intensity={Math.PI} />
