@@ -18,31 +18,43 @@ const Navbar: React.FC = () => {
   };
 
   const NavData: NavItem[] = [
-    {
-      id: 1,
-      title: "Home",
-      path: "/#",
-      cName: "nav-text",
-    },
-    {
-      id: 2,
-      title: "About Us",
-      path: "#aboutus",
-      cName: "nav-text",
-    },
-    {
-      id: 3,
-      title: "Contact Us",
-      path: "mailto: support@hackodisha.com",
-      cName: "nav-text",
-    },
-    {
-      id: 4,
-      title: "Events",
-      path: "#events",
-      cName: "nav-text",
-    },
-  ];
+      {
+          id: 1,
+          title: "Home",
+          path: "/#",
+          cName: "nav-text",
+      },
+      {
+          id: 2,
+          title: "About Us",
+          path: "#aboutus",
+          cName: "nav-text",
+      },
+      {
+          id: 3,
+          title: "Contact Us",
+          path: "mailto: support@hackodisha.com",
+          cName: "nav-text",
+      },
+      {
+          id: 4,
+          title: "Events",
+          path: "#events",
+          cName: "nav-text",
+      },
+      {
+          id: 5,
+          title: "ID Card",
+          path: "/id",
+          cName: "nav-text",
+      },
+      {
+          id: 6,
+          title: "Track Referral",
+          path: "/referral",
+          cName: "nav-text",
+      },
+  ]
 
   return (
       <nav
@@ -156,9 +168,9 @@ const Navbar: React.FC = () => {
            <button
   type="button"
   className="rounded-[13px] text-2xl font-medium border-solid border-opacity-70 px-[20px] py-[10px] text-center me-2 mb-2 bg-[#E16C00]  text-white"
-  style={{ 
-    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
-    border: "3px solid rgba(0, 0, 0, 0.70)", 
+  style={{
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)",
+    border: "3px solid rgba(0, 0, 0, 0.70)",
     transition: "transform 0.1s, box-shadow 0.1s",
   }}
   onMouseDown={(e) => {
@@ -189,9 +201,9 @@ const Navbar: React.FC = () => {
     <button
   type="button"
   className="rounded-[13px] font-medium border-solid border-opacity-70 text-sm px-[20px] py-[10px] text-center me-2 mb-2 bg-orange-500 text-white"
-  style={{ 
-    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)", 
-    border: "3px solid rgba(0, 0, 0, 0.70)", 
+  style={{
+    boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 0.75)",
+    border: "3px solid rgba(0, 0, 0, 0.70)",
     transition: "transform 0.1s, box-shadow 0.1s",
   }}
   onMouseDown={(e) => {
