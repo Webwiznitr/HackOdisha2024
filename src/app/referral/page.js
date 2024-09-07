@@ -16,6 +16,7 @@ function Page() {
                 `${process.env.NEXT_PUBLIC_API_URL}/user/getUserReferral`,
                 { referralCode }
             );
+            console.log(referralCode);
             setReferrals(response.data.referredUsers);
         } catch (error) {
             console.error(error);
