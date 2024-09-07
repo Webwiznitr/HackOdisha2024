@@ -28,6 +28,7 @@
     "react-intersection-observer": "^9.13.0",
     "react-parallax": "^3.5.1",
     "react-scroll-parallax": "^3.4.5",
+    "sharp": "^0.33.5",
     "three": "^0.167.1"
   },
   "devDependencies": {
@@ -45,5 +46,6 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }

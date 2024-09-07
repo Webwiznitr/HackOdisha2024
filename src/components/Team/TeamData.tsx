@@ -65,12 +65,19 @@ export const TeamMembers = [
   {
     id: 10,
     imgSrc:
+      "/images/ourTeam/shubham.webp",
+    title: "Shubham",
+    position: "Management",
+  },
+  {
+    id: 11,
+    imgSrc:
       "/images/ourTeam/swasti.webp",
     title: "Swasti",
     position: "Management",
   },
   {
-    id: 11,
+    id: 12,
     imgSrc:
       "/images/ourTeam/abinash.webp",
     title: "Abinash",
