@@ -1,14 +1,14 @@
-"use client"
-import * as THREE from "three"
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
-import { Canvas, extend, useThree, useFrame } from "@react-three/fiber"
+"use client";
+import * as THREE from "three";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
 import {
     useGLTF,
     useTexture,
     Environment,
     Lightformer,
     Text,
-} from "@react-three/drei"
+} from "@react-three/drei";
 import {
     BallCollider,
     CuboidCollider,
@@ -16,75 +16,82 @@ import {
     RigidBody,
     useRopeJoint,
     useSphericalJoint,
-} from "@react-three/rapier"
-import { MeshLineGeometry, MeshLineMaterial } from "meshline"
-import { LinkedInShareButton, TwitterShareButton } from "./CopyButton"
-import axios from "axios"
+} from "@react-three/rapier";
+import { MeshLineGeometry, MeshLineMaterial } from "meshline";
+import { LinkedInShareButton, TwitterShareButton } from "./CopyButton";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
-extend({ MeshLineGeometry, MeshLineMaterial })
+extend({ MeshLineGeometry, MeshLineMaterial });
 useGLTF.preload(
     "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb"
-)
+);
 useTexture.preload(
     "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg"
-)
+);
 
 export default function Page({ params }) {
     const uid = params.id;
     const ISSERVER = typeof window === "undefined";
-
+    const router = useRouter();
     if (!ISSERVER) {
         // Access localStorage
         localStorage?.setItem("uid", uid);
     }
 
-    const [userName, setUserName] = useState("")
-    const [selfReferral, setSelfReferral] = useState("")
+    const [userName, setUserName] = useState("");
+    const [selfReferral, setSelfReferral] = useState("");
+    const [noUser, setNoUser] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     const fetchUser = async () => {
         try {
-            console.log(uid)
-
             const res = await axios.post(
                 process.env.NEXT_PUBLIC_API_URL + "/user",
                 {
                     id: uid,
                 }
-            )
-            const userData = res.data.user
+            );
+            const userData = res.data.user;
             if (userData) {
-                setNoUser(false)
+                setNoUser(false);
             }
-            setUserName(userData.firstName.trim())
-            setSelfReferral(userData.selfReferral)
+            setUserName(userData.firstName.trim());
+            setSelfReferral(userData.selfReferral);
         } catch (error) {
-            console.log(error)
+            console.log(error);
+        } finally {
+            setLoading(false);
         }
-    }
+    };
 
     useLayoutEffect(() => {
-        fetchUser()
-    }, [])
+        fetchUser();
+    }, []);
 
     return noUser ? (
         <div className="flex flex-col items-center justify-center min-h-screen bg-[#634752] p-4">
             <h1 className="text-[#fff6e0] text-2xl font-bold">
-                It seems like you are not registered.
+                {loading
+                    ? "Loading..."
+                    : "It seems like you are not registered."}
             </h1>
-            <div className="flex gap-6 mt-8">
-                <a
-                    href="https://www.hackquest.io/en/hackathon/explore/HackOdisha-40"
-                    className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2"
-                >
-                    Register
-                </a>
-                <button
-                    onClick={() => router.back()}
-                    className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2 "
-                >
-                    Back
-                </button>
-            </div>
+            {!loading && (
+                <div className="flex gap-6 mt-8">
+                    <a
+                        href="https://www.hackquest.io/en/hackathon/explore/HackOdisha-40"
+                        className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2"
+                    >
+                        Register
+                    </a>
+                    <button
+                        onClick={() => router.back()}
+                        className="p-2 px-4 bg-[#e56e00] text-[#fff6e0] rounded hover:bg-[#634752] hover:text-[#fff6e0] transition hover:border-[#e56e00] border-2 "
+                    >
+                        Back
+                    </button>
+                </div>
+            )}
         </div>
     ) : (
         <div className="relative w-screen h-screen bg-black">
@@ -134,7 +141,7 @@ export default function Page({ params }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
@@ -146,12 +153,12 @@ function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
         colliders: false,
         angularDamping: 2,
         linearDamping: 2,
-    }
+    };
     const { nodes, materials } = useGLTF(
         "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb"
-    )
-    const texture = useTexture("/images/webwiz.svg")
-    const { width, height } = useThree((state) => state.size)
+    );
+    const texture = useTexture("/images/webwiz.svg");
+    const { width, height } = useThree((state) => state.size);
     const [curve] = useState(
         () =>
             new THREE.CatmullRomCurve3([
@@ -172,63 +179,63 @@ function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
 
     useEffect(() => {
         if (hovered) {
-            document.body.style.cursor = dragged ? "grabbing" : "grab"
-            return () => void (document.body.style.cursor = "auto")
+            document.body.style.cursor = dragged ? "grabbing" : "grab";
+            return () => void (document.body.style.cursor = "auto");
         }
-    }, [hovered, dragged])
+    }, [hovered, dragged]);
 
     useFrame((state, delta) => {
         if (dragged) {
             vec.set(state.pointer.x, state.pointer.y, 0.5).unproject(
                 state.camera
-            )
-            dir.copy(vec).sub(state.camera.position).normalize()
-            vec.add(dir.multiplyScalar(state.camera.position.length()))
-            ;[card, j1, j2, j3, fixed].forEach((ref) => ref.current?.wakeUp())
+            );
+            dir.copy(vec).sub(state.camera.position).normalize();
+            vec.add(dir.multiplyScalar(state.camera.position.length()));
+            [card, j1, j2, j3, fixed].forEach((ref) => ref.current?.wakeUp());
             card.current?.setNextKinematicTranslation({
                 x: vec.x - dragged.x,
                 y: vec.y - dragged.y,
                 z: vec.z - dragged.z,
-            })
+            });
         }
         if (fixed.current) {
             // Fix most of the jitter when over pulling the card
-            ;[j1, j2].forEach((ref) => {
+            [j1, j2].forEach((ref) => {
                 if (!ref.current.lerped)
                     ref.current.lerped = new THREE.Vector3().copy(
                         ref.current.translation()
-                    )
+                    );
                 const clampedDistance = Math.max(
                     0.1,
                     Math.min(
                         1,
                         ref.current.lerped.distanceTo(ref.current.translation())
                     )
-                )
+                );
                 ref.current.lerped.lerp(
                     ref.current.translation(),
                     delta * (minSpeed + clampedDistance * (maxSpeed - minSpeed))
-                )
-            })
+                );
+            });
             // Calculate catmul curve
-            curve.points[0].copy(j3.current.translation())
-            curve.points[1].copy(j2.current.lerped)
-            curve.points[2].copy(j1.current.lerped)
-            curve.points[3].copy(fixed.current.translation())
-            band.current.geometry.setPoints(curve.getPoints(32))
+            curve.points[0].copy(j3.current.translation());
+            curve.points[1].copy(j2.current.lerped);
+            curve.points[2].copy(j1.current.lerped);
+            curve.points[3].copy(fixed.current.translation());
+            band.current.geometry.setPoints(curve.getPoints(32));
             // Tilt it back towards the screen
-            ang.copy(card.current.angvel())
-            rot.copy(card.current.rotation())
+            ang.copy(card.current.angvel());
+            rot.copy(card.current.rotation());
             card.current.setAngvel({
                 x: ang.x,
                 y: ang.y - rot.y * 0.25,
                 z: ang.z,
-            })
+            });
         }
-    })
+    });
 
-    curve.curveType = "chordal"
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+    curve.curveType = "chordal";
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
     return (
         <>
@@ -318,5 +325,5 @@ function Band({ name, maxSpeed = 50, minSpeed = 10 }) {
                 />
             </mesh>
         </>
-    )
+    );
 }

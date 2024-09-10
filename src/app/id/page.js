@@ -28,7 +28,6 @@ function Page() {
     const fetchUser = async () => {
         setLoading(true);
         try {
-            console.log("hooo");
             const res = await axios.post(
                 process.env.NEXT_PUBLIC_API_URL + "/user",
                 {
