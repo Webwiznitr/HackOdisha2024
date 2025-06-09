@@ -45,7 +45,7 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-    title: "HackOdisha 4.0",
+    title: "HackOdisha 5.0",
     description: "hackodisha",
 };
 

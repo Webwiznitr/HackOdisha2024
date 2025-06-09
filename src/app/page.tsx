@@ -5,11 +5,7 @@ import Faq from "@/components/FAQ/Faq.js";
 import Footer from "@/components/Footer/page";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
-import Prizes from "@/components/Prizes/Prizes";
-import Sponsors from "@/components/Sponsors/Sponsors";
 import Statistics from "@/components/Statistics/Statistics";
-import Team from "@/components/Team/Team";
-import Timeline from "@/components/Timeline/Timeline";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
@@ -21,9 +17,9 @@ export default function Home() {
                 <AreUReady />
                 <AboutUs />
                 <Statistics />
-                <Timeline />
-                <Prizes />
-                <Team />
+                {/* <Timeline /> */}
+                {/* <Prizes /> */}
+                {/* <Team /> */}
                 {/* <Sponsors /> */}
                 <Faq />
                 <Footer />

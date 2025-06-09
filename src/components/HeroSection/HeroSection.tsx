@@ -1,48 +1,30 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
 import Herohack from "./Herohack";
 
 export default function HeroSection() {
-    const { scrollY } = useScroll();
-    const [viewportHeight, setViewportHeight] = useState(0);
-
-    useEffect(() => {
-        setViewportHeight(window.innerHeight);
-    }, []);
-
-    const y1 = useTransform(scrollY, [0, viewportHeight], [0, -100]);
-    const y2 = useTransform(scrollY, [0, viewportHeight], [0, 50]);
-
     return (
         <div>
-            <div className="relative h-[30rem] md:h-[43rem] 2xl:h-[50rem] bg-white overflow-hidden mb-[-0.8rem]">
-                <motion.div
-                    style={{ y: y1, zIndex: 10 }}
-                    className="absolute w-full h-full"
-                >
+            <div className="relative h-[30rem] smd:h-[43rem] 2xl:h-[50rem] bg-white overflow-hidden mb-[-0.8rem]">
+                <div className="absolute w-full h-full">
                     <Image
                         src="/images/below.png"
                         alt="gradient"
                         layout="fill"
                         className="object-cover z-10 object-bottom scale-125 sm:scale-100"
                     />
-                </motion.div>
+                </div>
                 <div
                     style={{
-                        zIndex: 20,
+                        zIndex: 99999999,
                     }}
-                    className="fixed top-[5rem] z-20 flex justify-center items-center w-screen"
+                    className="relative top-[8rem] z-20 flex justify-center items-center w-screen"
                 >
                     <Herohack />
                 </div>
                 <div className="bg-[#DFAA7A] absolute w-full bottom-0 h-52"></div>
-                <motion.div
-                    style={{ y: y2, zIndex: 30 ,pointerEvents: "none"}}
-                    className="absolute w-full bottom-0"
-                  
-                >
+                <div className="absolute w-full bottom-0 z-30">
                     <Image
                         src={"/images/Top.svg"}
                         alt="below"
@@ -51,7 +33,7 @@ export default function HeroSection() {
                         className="w-full z-30"
                         style={{ pointerEvents: "none" }}
                     />
-                </motion.div>
+                </div>
             </div>
         </div>
     );

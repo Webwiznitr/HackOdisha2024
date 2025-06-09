@@ -30,6 +30,7 @@ const config: Config = {
 
             screens: {
                 xsm: "300px",
+                smd: "769px",
                 "custom-1090": "1090px",
                 "custom-1000": "1000px",
                 "custom-1080": "1080px",
